@@ -14,12 +14,12 @@
 		<div class="content_box_container">
 			<div class="greeting">
 				<span>您好,欢迎来到罗技官方商城</span>
-				<a href="#">请登录</a> <span class="division">|</span>
-				<a href="#">注册</a>
+				<a href="#" target="_blank">请登录</a> <span class="division">|</span>
+				<a href="#" target="_blank">注册</a>
 			</div>
 			<div class="tools">
-				<a href="http://localhost/wordpress/my-account/">我的账户</a><span class="division">|</span>
-				<a href="http://localhost/wordpress/cart/">购物车</a>
+				<a href="http://localhost/wordpress/my-account/" target="_blank">我的账户</a><span class="division">|</span>
+				<a href="http://localhost/wordpress/cart/" target="_blank">购物车</a>
 			</div>
 		</div>
 	</header>
@@ -49,7 +49,20 @@
 	<!-- Header - Navigation and Banner -->
 	<nav class="navigation-container">
 		<div class="content_box_container">
-			<?php display_menu(); ?>
+			<?php display_menu_header(); ?>
 		</div>
 	</nav>
-	
+	<!-- Side Navigation Bar -->
+	<?php if(is_front_page()){ ?>
+		<div class="whole_banner_container" id="whole_banner_container">
+			<nav class="side_navigation">
+				<?php display_menu_side(); ?>
+			</nav>
+	<?php } ?>
+	<!-- Home Page Main SLider --> 
+	<?php if(is_front_page()){ ?>	
+			<div class="slider_container">
+					<?php echo do_shortcode("[R-slider id='2']"); ?>
+			</div>
+		</div>
+	<?php } ?>

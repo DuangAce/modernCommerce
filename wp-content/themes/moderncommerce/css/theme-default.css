@@ -191,3 +191,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #a8a8a8;
   color: #ffffff !important;
 }
+
+/* line 108, ../sass/base/_header.scss */
+#slider2_container {
+  float: left;
+}
+
+/* line 113, ../sass/base/_header.scss */
+.whole_banner_container {
+  min-height: 458px;
+}
+
+/* line 117, ../sass/base/_header.scss */
+.side_navigation {
+  float: left;
+  margin-left: 114px;
+  width: 223px;
+  height: 458px;
+  background: #FFFFFF;
+}
+/* line 123, ../sass/base/_header.scss */
+.side_navigation #menu-vertical-menu {
+  padding: 0px 10px;
+}
+/* line 126, ../sass/base/_header.scss */
+.side_navigation li.menu-item-has-children {
+  border-top: 1px solid #f2f2f2;
+}
+/* line 129, ../sass/base/_header.scss */
+.side_navigation a {
+  text-decoration: none;
+  width: 100%;
+  font-family: "simsun", Verdana, Arial;
+  height: 32px;
+  line-height: 32px;
+  color: #000000;
+}
+/* line 137, ../sass/base/_header.scss */
+.side_navigation ul.sub-menu li {
+  display: inline-block;
+}
+/* line 139, ../sass/base/_header.scss */
+.side_navigation ul.sub-menu li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+  color: #8f8f8f;
+  border-top: none;
+}

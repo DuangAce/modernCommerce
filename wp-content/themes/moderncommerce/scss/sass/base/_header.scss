@@ -105,4 +105,47 @@ $icon-size : 23px;
     }
 }
 
+#slider2_container{
+    // margin-left: 336px !important;
+    float:left;
+}
+
+.whole_banner_container{
+    min-height:458px;
+}
+
+.side_navigation{
+    float: left;
+    margin-left: 114px;
+    width: 223px;
+    height:458px;
+    background: #FFFFFF;
+    #menu-vertical-menu{
+        padding: 0px 10px;
+    }
+    li.menu-item-has-children{
+        border-top: 1px solid #f2f2f2;
+    }
+    a{
+        text-decoration:none;
+        width:100%;
+        font-family: "simsun", Verdana, Arial;
+        height: 32px;
+        line-height: 32px;
+        color:#000000;  
+    }
+    ul.sub-menu li{
+        display:inline-block;
+        a{
+            display: inline-block;
+            text-decoration:none;
+            font-size: $standard_font_size;
+            height: 24px;
+            line-height: 24px;
+            color:$standard_font_color;
+            border-top:none;
+        }
+    } 
+}
+
 

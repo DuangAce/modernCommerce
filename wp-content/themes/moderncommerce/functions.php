@@ -19,16 +19,22 @@ function register_menus() {
   register_nav_menus(
     array(
       'header-menu' => __( 'Header Menu' ),
-      'verical-menu' => __( 'Vertical Menu' )
+      'vertical-menu' => __( 'Vertical Menu' )
     )
   );
 }
 add_action( 'init', 'register_menus' );
 
-function display_menu(){
+function display_menu_header(){
 	if(has_nav_menu('header-menu')){
 		wp_nav_menu( array( 'theme_location' => 'header-menu' ) );
 	}
+}
+
+function display_menu_side(){
+  if(has_nav_menu('vertical-menu')){
+    wp_nav_menu( array( 'theme_location' => 'vertical-menu' ) );
+  }
 }
 
 // Remove Admin Bar in the front end
