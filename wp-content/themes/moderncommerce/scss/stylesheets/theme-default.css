@@ -1,0 +1,193 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../lib/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 7, ../sass/base/_header.scss */
+.content_box_container {
+  width: 1140px;
+  margin: auto;
+}
+
+/* line 9, ../sass/base/_header.scss */
+.header_topbar {
+  position: relative;
+  background: #ededed;
+  height: 35px;
+  line-height: 35px;
+  color: #8f8f8f;
+  z-index: 10;
+  font-size: 12px;
+}
+/* line 17, ../sass/base/_header.scss */
+.header_topbar .division {
+  padding: 0px 5px;
+}
+/* line 20, ../sass/base/_header.scss */
+.header_topbar a {
+  color: #8f8f8f;
+  text-decoration: none;
+}
+/* line 23, ../sass/base/_header.scss */
+.header_topbar a :hover {
+  text-decoration: underline;
+}
+/* line 27, ../sass/base/_header.scss */
+.header_topbar .greeting, .header_topbar .tools {
+  display: inline-block;
+}
+/* line 30, ../sass/base/_header.scss */
+.header_topbar .tools {
+  float: right;
+}
+
+/* line 36, ../sass/base/_header.scss */
+.header_logo_wrapper {
+  padding: 10px 5px;
+  height: 80px;
+}
+/* line 39, ../sass/base/_header.scss */
+.header_logo_wrapper .logo_search_wrapper {
+  display: inline-flex;
+}
+/* line 40, ../sass/base/_header.scss */
+.header_logo_wrapper .header_logo {
+  width: 360px;
+  height: 60px;
+}
+/* line 44, ../sass/base/_header.scss */
+.header_logo_wrapper .header_search {
+  margin-top: 10px;
+}
+/* line 47, ../sass/base/_header.scss */
+.header_logo_wrapper .header_search_bar {
+  position: relative;
+}
+/* line 49, ../sass/base/_header.scss */
+.header_logo_wrapper .header_search_bar #header_search_bar {
+  width: 370px;
+  padding-left: 5px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #8f8f8f;
+  background: #fff;
+}
+/* line 57, ../sass/base/_header.scss */
+.header_logo_wrapper .header_search_bar #headersearchsubmit {
+  position: absolute;
+  top: 6px;
+  right: 5px;
+  border: 0x;
+  background: url("../images/icon-header-search.png") no-repeat;
+  border: 0;
+  display: block;
+  height: 23px;
+  width: 23px;
+}
+/* line 67, ../sass/base/_header.scss */
+.header_logo_wrapper .header_search_bar #headersearchsubmit :hover {
+  background: url("../images/icon-header-search-hover.png") no-repeat;
+}
+
+/* line 74, ../sass/base/_header.scss */
+.navigation-container {
+  font-size: 14px;
+  color: #8f8f8f;
+  height: 30px;
+  background: #e4e4e4;
+  font-family: "microsoft yahei", Verdana, Arial;
+}
+/* line 80, ../sass/base/_header.scss */
+.navigation-container #menu-header-menu {
+  zoom: 1;
+  margin: 0 auto;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+/* line 86, ../sass/base/_header.scss */
+.navigation-container #menu-header-menu .first_item a {
+  padding: 0px 70px;
+}
+/* line 90, ../sass/base/_header.scss */
+.navigation-container #menu-header-menu li {
+  float: left;
+}
+/* line 93, ../sass/base/_header.scss */
+.navigation-container #menu-header-menu a {
+  padding: 0px 35px;
+  display: block;
+  text-decoration: none;
+  color: #8f8f8f;
+  height: 30px;
+  font-weight: bold;
+}
+/* line 102, ../sass/base/_header.scss */
+.navigation-container a:hover, .navigation-container #menu-header-menu .first_item a {
+  background: #a8a8a8;
+  color: #ffffff !important;
+}
