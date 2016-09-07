@@ -116,8 +116,8 @@ $icon-size : 23px;
 
 .side_navigation{
     float: left;
-    margin-left: 114px;
-    width: 223px;
+    margin-left: 106px;
+    width: 224px;
     height:458px;
     background: #FFFFFF;
     #menu-vertical-menu{
@@ -146,6 +146,10 @@ $icon-size : 23px;
             border-top:none;
         }
     } 
+}
+
+.main_content_wrapper{
+    padding-top:25px;
 }
 
 

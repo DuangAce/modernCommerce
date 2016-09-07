@@ -1,12 +1,14 @@
 <?php get_header(); ?>
 <!-- main content area -->
 <div class="main_content_wrapper">
-	<!-- display Page Content dynamicly -->
-	<?php while (have_posts()) : the_post(); ?>
+	<div class="content_box_container">
+		<!-- display Page Content dynamicly -->
+		<?php while (have_posts()) : the_post(); ?>
 
-		<?php the_content(); ?>
+			<?php the_content(); ?>
 
-	<?php endwhile; ?>
+		<?php endwhile; ?>
+	</div>
 </div>
 <!-- end of main content area -->
 <?php get_footer(); ?>

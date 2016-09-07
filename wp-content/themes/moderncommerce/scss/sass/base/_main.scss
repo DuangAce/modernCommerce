@@ -1,0 +1,14 @@
+$whole_page_background: #f4f4f4;
+
+.main_content_wrapper{
+	background:$whole_page_background;
+}
+
+.home_page_products_grid ul.products li{
+	.onsale{
+		display:none;
+	}
+	.add_to_cart_button{
+		display:none;
+	}
+}

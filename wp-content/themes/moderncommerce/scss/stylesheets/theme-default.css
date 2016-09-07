@@ -205,8 +205,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 117, ../sass/base/_header.scss */
 .side_navigation {
   float: left;
-  margin-left: 114px;
-  width: 223px;
+  margin-left: 106px;
+  width: 224px;
   height: 458px;
   background: #FFFFFF;
 }
@@ -240,4 +240,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 24px;
   color: #8f8f8f;
   border-top: none;
+}
+
+/* line 151, ../sass/base/_header.scss */
+.main_content_wrapper {
+  padding-top: 25px;
+}
+
+/* line 3, ../sass/base/_main.scss */
+.main_content_wrapper {
+  background: #f4f4f4;
+}
+
+/* line 8, ../sass/base/_main.scss */
+.home_page_products_grid ul.products li .onsale {
+  display: none;
+}
+/* line 11, ../sass/base/_main.scss */
+.home_page_products_grid ul.products li .add_to_cart_button {
+  display: none;
 }
