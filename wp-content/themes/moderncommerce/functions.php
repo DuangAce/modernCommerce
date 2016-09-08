@@ -44,28 +44,36 @@ function admin_bar() {
 }
 add_filter('show_admin_bar', 'admin_bar');
 
+//Add Widgets Functionality
+function widgets_initial(){
+    require_once (get_template_directory().'/inc/widgets/widget-area-declare.php');
+    require_once (get_template_directory().'/inc/widgets/widget-registration-colorblocks.php');
+    require_once(get_template_directory().'/inc/widgets/widget-registration-productblocks.php');
+}
+add_action( 'widgets_init','widgets_initial');
+
 //Add Custom Module to Visual Composer
 
-add_filter('avf_option_page_data_init', 'add_option_to_settings_page', 10, 1); 
-//Adds options to the "Custom Post Types" option page
-add_filter('avf_option_page_init', 'add_option_tab', 10, 1); 
-//Adds option page to Enfold theme option panel
-    function add_option_tab($avia_pages)
-    {
-        $avia_pages[] = array( 'slug' => 'mysettings', 'parent'=>'avia', 'icon'=>"hammer_screwdriver.png", 'title'=>__('My Tab','avia_framework'));
-        return $avia_pages;
-    }
+// add_filter('avf_option_page_data_init', 'add_option_to_settings_page', 10, 1); 
+// //Adds options to the "Custom Post Types" option page
+// add_filter('avf_option_page_init', 'add_option_tab', 10, 1); 
+// //Adds option page to Enfold theme option panel
+//     function add_option_tab($avia_pages)
+//     {
+//         $avia_pages[] = array( 'slug' => 'mysettings', 'parent'=>'avia', 'icon'=>"hammer_screwdriver.png", 'title'=>__('My Tab','avia_framework'));
+//         return $avia_pages;
+//     }
 
-    function add_option_to_settings_page($avia_elements)
-    {
-        $avia_elements[] =  array(
-                    "slug"  => "mysettings",
-                    "name"  => __("Custom Message",'avia_framework'),
-                    "desc"  => __("Please enter the message that you would like to dispay to your visitors.",'avia_framework'),
-                    "id"    => "message",
-                    "type"  => "textarea",
-                    "std"   => ""
-                    );
+//     function add_option_to_settings_page($avia_elements)
+//     {
+//         $avia_elements[] =  array(
+//                     "slug"  => "mysettings",
+//                     "name"  => __("Custom Message",'avia_framework'),
+//                     "desc"  => __("Please enter the message that you would like to dispay to your visitors.",'avia_framework'),
+//                     "id"    => "message",
+//                     "type"  => "textarea",
+//                     "std"   => ""
+//                     );
 
-        return $avia_elements;
-    }
+//         return $avia_elements;
+//     }

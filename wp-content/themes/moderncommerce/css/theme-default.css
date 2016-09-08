@@ -260,3 +260,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .home_page_products_grid ul.products li .add_to_cart_button {
   display: none;
 }
+
+/* line 2, ../scss/sass/base/_widgets.scss */
+.rp_colorblocks ul li {
+  display: inline-block;
+}
+/* line 4, ../scss/sass/base/_widgets.scss */
+.rp_colorblocks ul li img {
+  max-width: 224px;
+}

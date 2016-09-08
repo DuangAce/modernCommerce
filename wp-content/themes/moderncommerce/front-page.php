@@ -1,6 +1,8 @@
 <?php get_header(); ?>
 <!-- main content area -->
 <div class="main_content_wrapper">
+	<!-- get all the widgets -->
+	<?php get_sidebar(); ?>
 	<div class="content_box_container">
 		<!-- display Page Content dynamicly -->
 		<?php while (have_posts()) : the_post(); ?>
@@ -10,9 +12,10 @@
 		<?php endwhile; ?>
 	</div>
 </div>
+
 <!-- end of main content area -->
 <?php get_footer(); ?>
-<script>
+<!-- <script>
 	window.onload = function(){
 		var count = 0;
 		var colorList = ['#ff6861', '#02eacf'];
@@ -27,6 +30,6 @@
 			}
 		},2000);
 	}
-</script>
+</script> -->
 </body>
 </html>
