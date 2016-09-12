@@ -24,6 +24,11 @@
 			update_option( 'img_link_3', $_POST['img_link_3'] );
 			update_option( 'img_link_4', $_POST['img_link_4'] );
 			update_option( 'img_link_5', $_POST['img_link_5'] );
+			update_option( 'product_link_1', $_POST['product_link_1'] );
+			update_option( 'product_link_2', $_POST['product_link_2'] );
+			update_option( 'product_link_3', $_POST['product_link_3'] );
+			update_option( 'product_link_4', $_POST['product_link_4'] );
+			update_option( 'product_link_5', $_POST['product_link_5'] );
 		}
 		// require_once(get_template_directory().'/inc/templates/mc_rp_colorblocks.php');
 		$img_link_1 = get_option('img_link_1');
@@ -31,13 +36,24 @@
 		$img_link_3 = get_option('img_link_3');
 		$img_link_4 = get_option('img_link_4');
 		$img_link_5 = get_option('img_link_5');
+
+		$product_link_1 = get_option('product_link_1');
+		$product_link_2 = get_option('product_link_2');
+		$product_link_3 = get_option('product_link_3');
+		$product_link_4 = get_option('product_link_4');
+		$product_link_5 = get_option('product_link_5');
 	?>
 		Images Link Url:<br />
 		1:<input type="text" class="widefat" name="img_link_1" value="<?php echo stripslashes($img_link_1);?>" />
+		Product Url:<input type="text" class="widefat" name="product_link_1" value="<?php echo stripslashes($product_link_1);?>" />
 		2:<input type="text" class="widefat" name="img_link_2" value="<?php echo stripslashes($img_link_2);?>" />
+		Product Url:<input type="text" class="widefat" name="product_link_2" value="<?php echo stripslashes($product_link_2);?>" />
 		3:<input type="text" class="widefat" name="img_link_3" value="<?php echo stripslashes($img_link_3);?>" />
+		Product Url:<input type="text" class="widefat" name="product_link_3" value="<?php echo stripslashes($product_link_3);?>" />
 		4:<input type="text" class="widefat" name="img_link_4" value="<?php echo stripslashes($img_link_4);?>" />
+		Product Url:<input type="text" class="widefat" name="product_link_4" value="<?php echo stripslashes($product_link_4);?>" />
 		5:<input type="text" class="widefat" name="img_link_5" value="<?php echo stripslashes($img_link_5);?>" />
+		Product Url:<input type="text" class="widefat" name="product_link_5" value="<?php echo stripslashes($product_link_5);?>" />
 		<br />
 		<br />
 
@@ -52,6 +68,12 @@
 		$img_link_3 = get_option('img_link_3');
 		$img_link_4 = get_option('img_link_4');
 		$img_link_5 = get_option('img_link_5');
+
+		$product_link_1 = get_option('product_link_1');
+		$product_link_2 = get_option('product_link_2');
+		$product_link_3 = get_option('product_link_3');
+		$product_link_4 = get_option('product_link_4');
+		$product_link_5 = get_option('product_link_5');
 	?>
 
 	<!-- Template for color blocks -->
@@ -59,19 +81,19 @@
 			<div class="rp_colorblocks">
 			<ul>
 				<li>
-					<a href="#"><img src="<?php echo $img_link_1; ?>" /></a>
+					<a href="<?php echo $product_link_1; ?>"><img src="<?php echo $img_link_1; ?>" /></a>
 				</li>
 				<li>
-					<a href="#"><img src="<?php echo $img_link_2; ?>" /></a>
+					<a href="<?php echo $product_link_2; ?>"><img src="<?php echo $img_link_2; ?>" /></a>
 				</li>
 				<li>
-					<a href="#"><img src="<?php echo $img_link_3; ?>" /></a>
+					<a href="<?php echo $product_link_3; ?>"><img src="<?php echo $img_link_3; ?>" /></a>
 				</li>
 				<li>
-					<a href="#"><img src="<?php echo $img_link_4; ?>" /></a>
+					<a href="<?php echo $product_link_4; ?>"><img src="<?php echo $img_link_4; ?>" /></a>
 				</li>
 				<li>
-					<a href="#"><img src="<?php echo $img_link_5; ?>" /></a>
+					<a href="<?php echo $product_link_5; ?>"><img src="<?php echo $img_link_5; ?>" /></a>
 				</li>
 			</ul>
 			</div>
@@ -86,4 +108,4 @@
   		}else{
   			return null;
   		}
-}
+	}

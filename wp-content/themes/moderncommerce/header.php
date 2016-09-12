@@ -13,9 +13,20 @@
 	<header class="header_topbar">
 		<div class="content_box_container">
 			<div class="greeting">
-				<span>您好,欢迎来到罗技官方商城</span>
-				<a href="#" target="_blank">请登录</a> <span class="division">|</span>
-				<a href="#" target="_blank">注册</a>
+					<span>您好,欢迎来到罗技官方商城</span>
+				<?php if(!is_user_logged_in()){ ?>
+					<a href="#" target="_blank">请登录</a> <span class="division">|</span>
+					<a href="#" target="_blank">注册</a>
+				<?php }else{ 
+					$current_user = wp_get_current_user();
+				?>
+					<span class="label_account_info">您的用户名:</span>
+					<a class="header_account_info" href="<?php echo site_url()."/my-account"; ?>" target="_blank" target="_blank"><?php echo esc_html( $current_user->user_login ); ?></a>
+					<span class="division">|</span>
+					<a href="<?php echo wp_logout_url(); ?>">[退出]</a>
+				<?php
+					} 
+				?>
 			</div>
 			<div class="tools">
 				<a href="http://localhost/wordpress/my-account/" target="_blank">我的账户</a><span class="division">|</span>

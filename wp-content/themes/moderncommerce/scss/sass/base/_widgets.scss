@@ -5,3 +5,118 @@
 		max-width:224px;
 	}
 }
+	
+.widget-area{
+	margin-top:25px;
+	min-height: 110px;
+}
+
+.main-widget-title{
+	border-bottom: 1px solid black;
+    height: 15px;
+	span{
+		background: $whole_page_background;
+	    Z-INDEX: 20;
+	    margin-left: 30px;
+	    font-size: 24px;
+	}
+}
+
+.big_blocks_content{
+	padding-top:20px;
+	min-height:50px;
+	img:hover{
+		-moz-transform: scale(1.05);
+		-webkit-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+	.vertical_banner{
+		float: left;
+		img{
+			max-width:400px;
+			max-height: 559px;
+		}
+	}
+	.product_blocks_small ul li{
+		display:inline-block;
+		img{
+			max-width: 370px;
+		}
+		img.last_3_small_banner {
+		    max-width: 246px !important;
+		}
+	}
+}
+
+// footer services 
+.services-container{
+	padding:35px 0px;
+}
+.services-container span {
+	width: 20%;
+    display: inline;
+    float: left;
+    text-align: center;
+    color: #9f9f9f;
+    line-height: 30px;
+    font-family: "microsoft yahei", Verdana, Arial;
+    font-size: 16px;
+    min-height:100px;
+    i{
+    	display:block;
+    }
+}
+
+// footer columns
+.footer-column-container {
+	float:left;
+	padding: 30px 70px;
+	h3{
+		font-size:$medium_font_size;
+		font-weight: bold;
+	    line-height: 33px;
+	    color: #636363;
+	    padding: 2px 0px 2px 10px;
+	    border-left:3px solid #636363;
+	}
+	ul{
+		padding-top:20px;
+	}
+	a{
+		text-decoration: none;
+		font-size:$standard_font_size;
+		color:#636363;
+	}
+}
+
+.footer_contact{
+	float: left;
+    width: 225px;
+    text-align: center;
+    padding: 60px 140px;
+    .footer_p1{
+		color: #5c5b5b;
+	    font-family: "SimSun", Verdana, Arial;
+	    font-size: 22px;
+	    line-height: 33px;
+    }
+    .footer_p2{
+		font-family: "SimSun", Verdana, Arial;
+	    color: #565656;
+	    font-size: $standard_font_size;
+	    line-height: 20px;
+	    padding-bottom: 15px;
+    }
+}
+
+
+.footer_copyright{
+	text-align:center;
+	.mc_copyright{
+		font-size: $standard_font_size;
+	    color: $standard_font_color;
+	    padding: 30px 0 30px 0;
+	}
+}

@@ -49,6 +49,13 @@ function widgets_initial(){
     require_once (get_template_directory().'/inc/widgets/widget-area-declare.php');
     require_once (get_template_directory().'/inc/widgets/widget-registration-colorblocks.php');
     require_once(get_template_directory().'/inc/widgets/widget-registration-productblocks.php');
+    require_once(get_template_directory().'/inc/widgets/widget-registration-footerservices.php');
+    require_once(get_template_directory().'/inc/widgets/widget-registration-footercolumns.php');
+    require_once(get_template_directory().'/inc/widgets/widget-registration-footercontact.php');
+    require_once(get_template_directory().'/inc/widgets/widget-registration-footercopyright.php');
+    register_widget( 'MC_footercolumns' );
+    register_widget( 'MC_footercontact' );
+    register_widget( 'MC_footercopyright' );
 }
 add_action( 'widgets_init','widgets_initial');
 

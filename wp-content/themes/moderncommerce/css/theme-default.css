@@ -100,34 +100,43 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 .header_topbar .greeting, .header_topbar .tools {
   display: inline-block;
 }
-/* line 30, ../scss/sass/base/_header.scss */
+/* line 29, ../scss/sass/base/_header.scss */
+.header_topbar .greeting .label_account_info, .header_topbar .tools .label_account_info {
+  padding-left: 50px;
+}
+/* line 32, ../scss/sass/base/_header.scss */
+.header_topbar .greeting .header_account_info, .header_topbar .tools .header_account_info {
+  padding-left: 10px;
+  font-size: 14px;
+}
+/* line 37, ../scss/sass/base/_header.scss */
 .header_topbar .tools {
   float: right;
 }
 
-/* line 36, ../scss/sass/base/_header.scss */
+/* line 43, ../scss/sass/base/_header.scss */
 .header_logo_wrapper {
   padding: 10px 5px;
   height: 80px;
 }
-/* line 39, ../scss/sass/base/_header.scss */
+/* line 46, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .logo_search_wrapper {
   display: inline-flex;
 }
-/* line 40, ../scss/sass/base/_header.scss */
+/* line 47, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .header_logo {
   width: 360px;
   height: 60px;
 }
-/* line 44, ../scss/sass/base/_header.scss */
+/* line 51, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .header_search {
   margin-top: 10px;
 }
-/* line 47, ../scss/sass/base/_header.scss */
+/* line 54, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .header_search_bar {
   position: relative;
 }
-/* line 49, ../scss/sass/base/_header.scss */
+/* line 56, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .header_search_bar #header_search_bar {
   width: 370px;
   padding-left: 5px;
@@ -136,7 +145,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border: 1px solid #8f8f8f;
   background: #fff;
 }
-/* line 57, ../scss/sass/base/_header.scss */
+/* line 64, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .header_search_bar #headersearchsubmit {
   position: absolute;
   top: 6px;
@@ -148,12 +157,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 23px;
   width: 23px;
 }
-/* line 67, ../scss/sass/base/_header.scss */
+/* line 74, ../scss/sass/base/_header.scss */
 .header_logo_wrapper .header_search_bar #headersearchsubmit :hover {
   background: url("../images/icon-header-search-hover.png") no-repeat;
 }
 
-/* line 74, ../scss/sass/base/_header.scss */
+/* line 81, ../scss/sass/base/_header.scss */
 .navigation-container {
   font-size: 14px;
   color: #8f8f8f;
@@ -161,7 +170,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background: #e4e4e4;
   font-family: "microsoft yahei", Verdana, Arial;
 }
-/* line 80, ../scss/sass/base/_header.scss */
+/* line 87, ../scss/sass/base/_header.scss */
 .navigation-container #menu-header-menu {
   zoom: 1;
   margin: 0 auto;
@@ -169,15 +178,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 30px;
   line-height: 30px;
 }
-/* line 86, ../scss/sass/base/_header.scss */
+/* line 93, ../scss/sass/base/_header.scss */
 .navigation-container #menu-header-menu .first_item a {
   padding: 0px 70px;
 }
-/* line 90, ../scss/sass/base/_header.scss */
+/* line 97, ../scss/sass/base/_header.scss */
 .navigation-container #menu-header-menu li {
   float: left;
 }
-/* line 93, ../scss/sass/base/_header.scss */
+/* line 100, ../scss/sass/base/_header.scss */
 .navigation-container #menu-header-menu a {
   padding: 0px 35px;
   display: block;
@@ -186,23 +195,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 30px;
   font-weight: bold;
 }
-/* line 102, ../scss/sass/base/_header.scss */
+/* line 109, ../scss/sass/base/_header.scss */
 .navigation-container a:hover, .navigation-container #menu-header-menu .first_item a {
   background: #a8a8a8;
   color: #ffffff !important;
 }
 
-/* line 108, ../scss/sass/base/_header.scss */
+/* line 115, ../scss/sass/base/_header.scss */
 #slider2_container {
   float: left;
 }
 
-/* line 113, ../scss/sass/base/_header.scss */
+/* line 120, ../scss/sass/base/_header.scss */
 .whole_banner_container {
   min-height: 458px;
 }
 
-/* line 117, ../scss/sass/base/_header.scss */
+/* line 124, ../scss/sass/base/_header.scss */
 .side_navigation {
   float: left;
   margin-left: 106px;
@@ -210,15 +219,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 458px;
   background: #FFFFFF;
 }
-/* line 123, ../scss/sass/base/_header.scss */
+/* line 130, ../scss/sass/base/_header.scss */
 .side_navigation #menu-vertical-menu {
   padding: 0px 10px;
 }
-/* line 126, ../scss/sass/base/_header.scss */
+/* line 133, ../scss/sass/base/_header.scss */
 .side_navigation li.menu-item-has-children {
   border-top: 1px solid #f2f2f2;
 }
-/* line 129, ../scss/sass/base/_header.scss */
+/* line 136, ../scss/sass/base/_header.scss */
 .side_navigation a {
   text-decoration: none;
   width: 100%;
@@ -227,11 +236,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 32px;
   color: #000000;
 }
-/* line 137, ../scss/sass/base/_header.scss */
+/* line 144, ../scss/sass/base/_header.scss */
 .side_navigation ul.sub-menu li {
   display: inline-block;
 }
-/* line 139, ../scss/sass/base/_header.scss */
+/* line 146, ../scss/sass/base/_header.scss */
 .side_navigation ul.sub-menu li a {
   display: inline-block;
   text-decoration: none;
@@ -242,7 +251,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-top: none;
 }
 
-/* line 151, ../scss/sass/base/_header.scss */
+/* line 158, ../scss/sass/base/_header.scss */
 .main_content_wrapper {
   padding-top: 25px;
 }
@@ -250,13 +259,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 3, ../scss/sass/base/_main.scss */
 .main_content_wrapper {
   background: #f4f4f4;
+  padding: 25px 0px;
 }
 
-/* line 8, ../scss/sass/base/_main.scss */
+/* line 9, ../scss/sass/base/_main.scss */
 .home_page_products_grid ul.products li .onsale {
   display: none;
 }
-/* line 11, ../scss/sass/base/_main.scss */
+/* line 12, ../scss/sass/base/_main.scss */
 .home_page_products_grid ul.products li .add_to_cart_button {
   display: none;
 }
@@ -268,4 +278,139 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 4, ../scss/sass/base/_widgets.scss */
 .rp_colorblocks ul li img {
   max-width: 224px;
+}
+
+/* line 9, ../scss/sass/base/_widgets.scss */
+.widget-area {
+  margin-top: 25px;
+  min-height: 110px;
+}
+
+/* line 14, ../scss/sass/base/_widgets.scss */
+.main-widget-title {
+  border-bottom: 1px solid black;
+  height: 15px;
+}
+/* line 17, ../scss/sass/base/_widgets.scss */
+.main-widget-title span {
+  background: #f4f4f4;
+  Z-INDEX: 20;
+  margin-left: 30px;
+  font-size: 24px;
+}
+
+/* line 25, ../scss/sass/base/_widgets.scss */
+.big_blocks_content {
+  padding-top: 20px;
+  min-height: 50px;
+}
+/* line 28, ../scss/sass/base/_widgets.scss */
+.big_blocks_content img:hover {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+/* line 35, ../scss/sass/base/_widgets.scss */
+.big_blocks_content .vertical_banner {
+  float: left;
+}
+/* line 37, ../scss/sass/base/_widgets.scss */
+.big_blocks_content .vertical_banner img {
+  max-width: 400px;
+  max-height: 559px;
+}
+/* line 42, ../scss/sass/base/_widgets.scss */
+.big_blocks_content .product_blocks_small ul li {
+  display: inline-block;
+}
+/* line 44, ../scss/sass/base/_widgets.scss */
+.big_blocks_content .product_blocks_small ul li img {
+  max-width: 370px;
+}
+/* line 47, ../scss/sass/base/_widgets.scss */
+.big_blocks_content .product_blocks_small ul li img.last_3_small_banner {
+  max-width: 246px !important;
+}
+
+/* line 54, ../scss/sass/base/_widgets.scss */
+.services-container {
+  padding: 35px 0px;
+}
+
+/* line 57, ../scss/sass/base/_widgets.scss */
+.services-container span {
+  width: 20%;
+  display: inline;
+  float: left;
+  text-align: center;
+  color: #9f9f9f;
+  line-height: 30px;
+  font-family: "microsoft yahei", Verdana, Arial;
+  font-size: 16px;
+  min-height: 100px;
+}
+/* line 67, ../scss/sass/base/_widgets.scss */
+.services-container span i {
+  display: block;
+}
+
+/* line 73, ../scss/sass/base/_widgets.scss */
+.footer-column-container {
+  float: left;
+  padding: 30px 70px;
+}
+/* line 76, ../scss/sass/base/_widgets.scss */
+.footer-column-container h3 {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 33px;
+  color: #636363;
+  padding: 2px 0px 2px 10px;
+  border-left: 3px solid #636363;
+}
+/* line 84, ../scss/sass/base/_widgets.scss */
+.footer-column-container ul {
+  padding-top: 20px;
+}
+/* line 87, ../scss/sass/base/_widgets.scss */
+.footer-column-container a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #636363;
+}
+
+/* line 94, ../scss/sass/base/_widgets.scss */
+.footer_contact {
+  float: left;
+  width: 225px;
+  text-align: center;
+  padding: 60px 140px;
+}
+/* line 99, ../scss/sass/base/_widgets.scss */
+.footer_contact .footer_p1 {
+  color: #5c5b5b;
+  font-family: "SimSun", Verdana, Arial;
+  font-size: 22px;
+  line-height: 33px;
+}
+/* line 105, ../scss/sass/base/_widgets.scss */
+.footer_contact .footer_p2 {
+  font-family: "SimSun", Verdana, Arial;
+  color: #565656;
+  font-size: 12px;
+  line-height: 20px;
+  padding-bottom: 15px;
+}
+
+/* line 115, ../scss/sass/base/_widgets.scss */
+.footer_copyright {
+  text-align: center;
+}
+/* line 117, ../scss/sass/base/_widgets.scss */
+.footer_copyright .mc_copyright {
+  font-size: 12px;
+  color: #8f8f8f;
+  padding: 30px 0 30px 0;
 }

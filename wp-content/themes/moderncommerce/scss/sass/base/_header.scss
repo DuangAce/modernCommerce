@@ -26,6 +26,13 @@ $icon-size : 23px;
     }
     .greeting{
     	display:inline-block;
+        .label_account_info{
+            padding-left:50px;
+        }
+        .header_account_info{
+            padding-left:10px;
+            font-size:$medium_font_size;
+        }
     }
     .tools{
     	float: right;

@@ -13,6 +13,15 @@
 	</div>
 </div>
 
+<?php get_sidebar('service'); ?>
+<?php 
+	/*if(is_active_sidebar( 'product-blocks' )){ 
+		echo "yeah!"; 
+	}else { 
+		echo "Whoooops"; 
+	}*/ 
+?>
+
 <!-- end of main content area -->
 <?php get_footer(); ?>
 <!-- <script>
