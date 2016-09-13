@@ -1,8 +1,14 @@
 $standard_font_size : 12px;
 $medium_font_size : 14px;
+$big_font_size:18px;
 $standard_font_color : #8f8f8f;
 $content-width : 1140px;
 $icon-size : 23px;
+
+a{
+    color: $standard_font_color;
+    text-decoration: none;
+}
 
 .content_box_container{ width:$content-width; margin:auto; }
 // HEADER SECTION STYLE SHEET

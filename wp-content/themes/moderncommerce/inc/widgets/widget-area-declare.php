@@ -124,5 +124,19 @@
     );
     
     register_sidebar( $footer_copyright );
+
+    /**
+    * Creates a sidebar
+    * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
+    */
+    $product_filter = array(
+        'name'          => __( 'Product Filter' ),
+        'id'            => 'mc_product_filter',
+        'description'   => 'Area to display product filter in Shop Page',
+        'class'         => 'mc_product_filter'
+    );
+    
+    register_sidebar( $product_filter );
+    
     
     

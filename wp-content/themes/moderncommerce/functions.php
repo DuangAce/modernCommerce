@@ -59,28 +59,22 @@ function widgets_initial(){
 }
 add_action( 'widgets_init','widgets_initial');
 
-//Add Custom Module to Visual Composer
+// Remove each style one by one
+add_filter( 'woocommerce_enqueue_styles', 'jk_dequeue_styles' );
+function jk_dequeue_styles( $enqueue_styles ) {
+    unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+    unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
+    unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+    return $enqueue_styles;
+}
 
-// add_filter('avf_option_page_data_init', 'add_option_to_settings_page', 10, 1); 
-// //Adds options to the "Custom Post Types" option page
-// add_filter('avf_option_page_init', 'add_option_tab', 10, 1); 
-// //Adds option page to Enfold theme option panel
-//     function add_option_tab($avia_pages)
-//     {
-//         $avia_pages[] = array( 'slug' => 'mysettings', 'parent'=>'avia', 'icon'=>"hammer_screwdriver.png", 'title'=>__('My Tab','avia_framework'));
-//         return $avia_pages;
-//     }
+// Or just remove them all in one line
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
-//     function add_option_to_settings_page($avia_elements)
-//     {
-//         $avia_elements[] =  array(
-//                     "slug"  => "mysettings",
-//                     "name"  => __("Custom Message",'avia_framework'),
-//                     "desc"  => __("Please enter the message that you would like to dispay to your visitors.",'avia_framework'),
-//                     "id"    => "message",
-//                     "type"  => "textarea",
-//                     "std"   => ""
-//                     );
 
-//         return $avia_elements;
-//     }
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_change_breadcrumb_home_text' );
+function jk_change_breadcrumb_home_text( $defaults ) {
+    // Change the breadcrumb home text from 'Home' to 'Appartment'
+    $defaults['home'] = '首页';
+    return $defaults;
+}

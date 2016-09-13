@@ -12,8 +12,7 @@
 		<?php endwhile; ?>
 	</div>
 </div>
-
-<?php get_sidebar('service'); ?>
+<?php //get_sidebar('service'); ?>
 <?php 
 	/*if(is_active_sidebar( 'product-blocks' )){ 
 		echo "yeah!"; 
