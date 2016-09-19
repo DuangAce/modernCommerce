@@ -21,20 +21,31 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 ?>
-
 <?php wc_print_notices(); ?>
 
-<?php do_action( 'woocommerce_before_customer_login_form' ); ?>
+<?php //do_action( 'woocommerce_before_customer_login_form' ); ?>
 
 <?php if ( get_option( 'woocommerce_enable_myaccount_registration' ) === 'yes' ) : ?>
-
 <div class="u-columns col2-set" id="customer_login">
 
 	<div class="u-column1 col-1">
 
 <?php endif; ?>
+		<?php
+		$loginUrl = site_url().'/登陆';
+		function redirect($loginUrl){
+		    if (headers_sent()){
+		      die('<script type="text/javascript">window.location.href="' . $loginUrl . '";</script>');
+		    }else{
+		      header('Location: ' . $loginUrl);
+		      die();
+		    }    
+		}
+			
+		redirect($loginUrl); 
+		?>
 
-		<h2><?php _e( 'Login', 'woocommerce' ); ?></h2>
+		<h2 class="login-title"><?php _e( 'Login', 'woocommerce' ); ?></h2>
 
 		<form method="post" class="login">
 
@@ -72,7 +83,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 	<div class="u-column2 col-2">
 
-		<h2><?php _e( 'Register', 'woocommerce' ); ?></h2>
+		<h2 class="login-title"><?php _e( 'Register', 'woocommerce' ); ?></h2>
 
 		<form method="post" class="register">
 

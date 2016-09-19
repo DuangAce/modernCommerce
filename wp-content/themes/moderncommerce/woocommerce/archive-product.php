@@ -68,7 +68,7 @@ get_header( 'shop' ); ?>
 			     		echo "<a href='#'>全部分类</a> > <a href='#'> 个人电脑周边产品 </a> >";
 		?>
 			<form role="search" method="get" class="woocommerce-product-search" action="<?php echo site_url() ?>">
-				<input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="Search Products…" value="" name="s" title="Search for:">
+				<input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="搜索..." value="" name="s" title="Search for:">
 				<input type="submit" id="filtersearchsubmit" value="">
 				<input type="hidden" name="post_type" value="product">
 			</form>
@@ -76,7 +76,7 @@ get_header( 'shop' ); ?>
 			     	echo "</div>";
 			     	get_sidebar('filter');
 				echo "<div class='price-filter'><h2>价格:</h2>
-                <a href=".site_url().'/?min_price=0&max_price=49&post_type=product'.">$0-$49</a>
+                <a class='first-filter' href=".site_url().'/?min_price=0&max_price=49&post_type=product'.">$0-$49</a>
                 <a href=".site_url().'/?min_price=50&max_price=99&post_type=product'.">$50-$99</a>
                 <a href=".site_url().'/?min_price=100&max_price=149&post_type=product'.">$100-$149</a>
                 <a href=".site_url().'/?min_price=150&max_price=199&post_type=product'.">$150-$199</a>

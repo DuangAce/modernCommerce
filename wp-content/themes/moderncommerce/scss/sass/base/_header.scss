@@ -165,4 +165,22 @@ a{
     padding-top:25px;
 }
 
+i.icon-account{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-right: 10px;
+    background-image: url('../images/icon-account.png');
+}
+
+i.icon-cart{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: sub;
+    margin-right: 10px;
+    background-image: url('../images/icon-cart.png');
+}
+
 

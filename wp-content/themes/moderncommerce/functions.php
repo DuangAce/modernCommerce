@@ -10,6 +10,12 @@ function include_all_css()
  
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'theme-default' );
+    wp_register_script('captcha',"https://www.google.com/recaptcha/api.js",array());
+    $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+    if($current_url == 'http://localhost/wordpress/%E7%99%BB%E9%99%86/' || $current_url == 'http://localhost/wordpress/%E6%B3%A8%E5%86%8C/'){
+        wp_enqueue_script('captcha');
+    }
+    
 }
 add_action( 'wp_enqueue_scripts', 'include_all_css' );
 
@@ -53,6 +59,8 @@ function widgets_initial(){
     require_once(get_template_directory().'/inc/widgets/widget-registration-footercolumns.php');
     require_once(get_template_directory().'/inc/widgets/widget-registration-footercontact.php');
     require_once(get_template_directory().'/inc/widgets/widget-registration-footercopyright.php');
+    register_widget( 'MC_colorblocks' );
+    register_widget( 'MC_productblocks' );
     register_widget( 'MC_footercolumns' );
     register_widget( 'MC_footercontact' );
     register_widget( 'MC_footercopyright' );
@@ -78,3 +86,46 @@ function jk_change_breadcrumb_home_text( $defaults ) {
     $defaults['home'] = '首页';
     return $defaults;
 }
+
+/**
+
+* Add new register fields for WooCommerce registration.
+
+*
+
+* @return string Register fields HTML.
+
+*/
+
+function wooc_extra_register_fields() {
+?>
+       <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+
+       <span class="required">*</span><label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce' ); ?>:</label>
+
+       <input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name" value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?>" />
+
+       </p>
+
+       <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+
+       <span class="required">*</span><label for="reg_billing_last_name"><?php _e( 'Last name', 'woocommerce' ); ?>:</label>
+
+       <input type="text" class="input-text" name="billing_last_name" id="reg_billing_last_name" value="<?php if ( ! empty( $_POST['billing_last_name'] ) ) esc_attr_e( $_POST['billing_last_name'] ); ?>" />
+       </p>
+
+       <div class="clear"></div>
+
+       <p class="woocommerce-FormRow woocommerce-FormRow--wide form-row form-row-wide">
+
+       <span class="required">*</span><label for="reg_billing_phone"><?php _e( 'Phone', 'woocommerce' ); ?>:</label>
+
+       <input type="text" class="input-text" name="billing_phone" id="reg_billing_phone" value="<?php if ( ! empty( $_POST['billing_phone'] ) ) esc_attr_e( $_POST['billing_phone'] ); ?>" />
+       </p>
+
+       <?php
+    }
+
+ 
+
+add_action( 'woocommerce_register_form', 'wooc_extra_register_fields' );

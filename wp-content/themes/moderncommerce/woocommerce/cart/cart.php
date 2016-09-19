@@ -20,9 +20,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-wc_print_notices();
-
-do_action( 'woocommerce_before_cart' ); ?>
+wc_print_notices(); ?>
+<div class="main_content_wrapper">
+	<div class="content_box_container">
+		<div class="cart_box_container">
+<?php do_action( 'woocommerce_before_cart' ); ?>
 
 <form action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post">
 
@@ -41,7 +43,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 	</thead>
 	<tbody>
 		<?php do_action( 'woocommerce_before_cart_contents' ); ?>
-
 		<?php
 		foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) {
 			$_product   = apply_filters( 'woocommerce_cart_item_product', $cart_item['data'], $cart_item, $cart_item_key );
@@ -164,3 +165,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 </div>
 
 <?php do_action( 'woocommerce_after_cart' ); ?>
+			</div>
+	</div>
+</div>

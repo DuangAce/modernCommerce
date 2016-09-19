@@ -57,3 +57,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 	 */
 	do_action( 'woocommerce_after_my_account' );
 ?>
+
+</div>

@@ -15,8 +15,8 @@
 			<div class="greeting">
 					<span>您好,欢迎来到罗技官方商城</span>
 				<?php if(!is_user_logged_in()){ ?>
-					<a href="#" target="_blank">请登录</a> <span class="division">|</span>
-					<a href="#" target="_blank">注册</a>
+					<a href="<?php echo site_url().'/%e7%99%bb%e9%99%86/' ?>" target="_blank">请登录</a> <span class="division">|</span>
+					<a href="<?php echo site_url().'/注册/' ?>" target="_blank">注册</a>
 				<?php }else{ 
 					$current_user = wp_get_current_user();
 				?>
@@ -29,8 +29,8 @@
 				?>
 			</div>
 			<div class="tools">
-				<a href="http://localhost/wordpress/my-account/" target="_blank">我的账户</a><span class="division">|</span>
-				<a href="http://localhost/wordpress/cart/" target="_blank">购物车</a>
+				<i class="icon-account"></i><a href="http://localhost/wordpress/my-account/" target="_blank">我的账户</a><span class="division">|</span>
+				<i class="icon-cart"></i><a href="http://localhost/wordpress/cart/" target="_blank">购物车</a>
 			</div>
 		</div>
 	</header>
@@ -42,7 +42,7 @@
 				<?php $home_url = get_site_url(); ?>
 					<!-- Logo Images -->
 					<a href="<?php echo $home_url; ?>">
-						<img src="http://store.logitech.com.cn/images/logo.png">
+						<img src="http://localhost/wordpress/wp-content/uploads/2016/09/logo.png">
 					</a>
 				</div>
 				<div class="header_search">

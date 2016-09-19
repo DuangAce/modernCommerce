@@ -1,7 +1,7 @@
-<?php if ( is_active_sidebar( 'recommend-products' ) ) : ?>
+<?php if ( is_active_sidebar( 'after-slider' ) ) : ?>
 	<div class="widget-area-first" role="complementary">
 		<div class="content_box_container">
-			<?php dynamic_sidebar( 'recommend-products' ); ?>
+			<?php dynamic_sidebar( 'after-slider' ); ?>
 		</div>
 	</div><!-- #primary-sidebar -->
 <?php endif; ?>

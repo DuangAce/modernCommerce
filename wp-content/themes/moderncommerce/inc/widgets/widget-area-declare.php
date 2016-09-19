@@ -3,35 +3,31 @@
     * Creates a Color Blocks with Products sidebar
     * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
     */
-    $rp_colorblocks = array(
-        'name'          => 'Recommend Products',
-        'id'            => 'recommend-products',
-        'description'   => 'Area to display Recommended Products',
-        'class'         => 'recommend-products',
+    $after_slider = array(
+        'name'          => 'After Slider - Color Blocks',
+        'id'            => 'after-slider',
+        'description'   => 'Area to display Recommended Products in color blocks',
+        'class'         => 'after-slider'
         // 'before_widget' => '<li id="%1" class="widget %2">',
         // 'after_widget'  => '</li>',
-        'before_title'  => '<h2 class="recommend-products-title">',
-        'after_title'   => '</h2>'
+        // 'before_title'  => '<h2 class="recommend-products-title">',
+        // 'after_title'   => '</h2>'
     );
 
-    register_sidebar( $rp_colorblocks );
+    register_sidebar( $after_slider );
 
     /**
     * Creates a Product Big Blocks sidebar
     * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
     */
-    $product_blocks = array(
-        'name'          => 'Product Big Blocks',
+    $main_product = array(
+        'name'          => 'Main product display',
         'id'            => 'product-blocks',
         'description'   => 'Area to display products in big blocks',
-        'class'         => 'product-blocks',
-        // 'before_widget' => '<li id="%1" class="widget %2">',
-        // 'after_widget'  => '</li>',
-        // 'before_title'  => '<h2 class="widgettitle">',
-        // 'after_title'   => '</h2>'
+        'class'         => 'product-blocks'
     );
     
-    register_sidebar( $product_blocks );
+    register_sidebar( $main_product );
     
 
     /**
