@@ -68,15 +68,15 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 * @hooked woocommerce_template_loop_product_link_close - 5
 	 * @hooked woocommerce_template_loop_add_to_cart - 10
 	 */
-	$shortcode_id = "[add_to_cart_url id='".$product->id."']";
-	$add_to_cart = do_shortcode($shortcode_id);
+	$buy_now = site_url().'/checkout/?add-to-cart='.$product->id;
+	$add_to_cart_url = site_url().'/cart/?add-to-cart='.$product->id;
 	echo "<div class='add_to_cart_container'>";
 		echo "<div class='cart-container-left'>";
 //			do_action( 'woocommerce_after_shop_loop_item' );
-			echo "<a href='".$add_to_cart."' class='add_to_cart_button'>加入购物车</a>";
+			echo "<a href='".$add_to_cart_url."' class='add_to_cart_button'>加入购物车</a>";
 		echo "</div>";
 		echo "<div class='cart-container-right'>";
-			echo "<a href='".$add_to_cart."' class='purchase' id='quick_buy' >立即购买</a>";
+			echo "<a href='".$buy_now."' class='purchase' id='quick_buy' >立即购买</a>";
 		echo "</div>";
 	echo "</div>";
 	?>

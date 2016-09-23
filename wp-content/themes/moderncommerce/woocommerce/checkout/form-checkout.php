@@ -19,10 +19,13 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+echo "<div class='main_content_wrapper'>";
+echo "<div class='content_box_container'>";
 
 wc_print_notices();
 
-do_action( 'woocommerce_before_checkout_form', $checkout );
+// coupon field in the checkout page
+//do_action( 'woocommerce_before_checkout_form', $checkout );
 
 // If checkout registration is disabled and not logged in, the user cannot checkout
 if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_user_logged_in() ) {
@@ -65,3 +68,6 @@ if ( ! $checkout->enable_signup && ! $checkout->enable_guest_checkout && ! is_us
 </form>
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+
+</div>
+</div>

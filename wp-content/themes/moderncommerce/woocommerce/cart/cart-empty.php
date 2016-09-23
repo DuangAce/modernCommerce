@@ -19,7 +19,8 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-
+echo "<div class='main_content_wrapper'>";
+echo "<div class='content_box_container'>";
 wc_print_notices();
 
 ?>
@@ -37,3 +38,6 @@ wc_print_notices();
 		</a>
 	</p>
 <?php endif; ?>
+
+</div>
+</div>

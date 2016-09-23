@@ -2,20 +2,6 @@
 <?php get_sidebar('footer'); ?>
 
 <script>
-    function mc_minus(){
-        var number = document.getElementById('number');
-        if(number.value<= 1){
-            //Do Nothing
-        }else{
-            number.value--;
-        }
-    }
-
-    function mc_add(){
-        var number = document.getElementById('number');
-        number.value++;
-    }
-
     jQuery(document).ready(function($) {
         $(".product_quantity_minus").click(function(e){
             var quantityInput = $(this).closest(".quantity").children("input");
@@ -45,6 +31,7 @@
             //Do Nothing
         }
     }
+    
     window.onload = function(){
         cartNotification();
     }

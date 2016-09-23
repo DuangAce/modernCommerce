@@ -65,7 +65,7 @@ get_header( 'shop' ); ?>
 			    */
 			     echo "<div class='product-filter-container'>";
 			     	echo "<div class='product-filter-breadcrump'>";
-			     		echo "<a href='#'>全部分类</a> > <a href='#'> 个人电脑周边产品 </a> >";
+			     		echo "<a href='".site_url().'/shop'."'>全部分类</a>&nbsp&nbsp>&nbsp&nbsp";
 		?>
 			<form role="search" method="get" class="woocommerce-product-search" action="<?php echo site_url() ?>">
 				<input type="search" id="woocommerce-product-search-field" class="search-field" placeholder="搜索..." value="" name="s" title="Search for:">

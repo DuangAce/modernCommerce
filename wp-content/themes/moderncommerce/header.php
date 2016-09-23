@@ -30,7 +30,7 @@
 			</div>
 			<div class="tools">
 				<i class="icon-account"></i><a href="http://localhost/wordpress/my-account/" target="_blank">我的账户</a><span class="division">|</span>
-				<i class="icon-cart"></i><a href="http://localhost/wordpress/cart/" target="_blank">购物车</a>
+				<i class="icon-cart"></i><a href="http://localhost/wordpress/cart/" target="_blank">购物车 | <span class='cart_counter'>(<?php echo WC()->cart->get_cart_contents_count() ?>)</a></span>
 			</div>
 		</div>
 	</header>
