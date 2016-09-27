@@ -1,30 +1,21 @@
-$standard_font_size : 12px;
-$medium_font_size : 14px;
-$big_font_size:18px;
-$standard_font_color : #8f8f8f;
-$content-width : 1140px;
-$icon-size : 23px;
+//
+// Header
+// --------------------------------------------------
 
-a{
-    color: $standard_font_color;
-    text-decoration: none;
-}
 
-.content_box_container{ width:$content-width; margin:auto; }
-// HEADER SECTION STYLE SHEET
 .header_topbar{
 	position: relative;
     background: #ededed;
     height: 35px;
     line-height: 35px;
-    color: $standard_font_color;
+    color: $font-color-base;
     z-index: 10;
-    font-size: $standard_font_size;
+    font-size: $font-size-base;
     .division{
 		padding: 0px 5px;
     }
     a{
-    	color:$standard_font_color;
+    	color:$font-color-base;
     	text-decoration: none;
     	:hover{
     		text-decoration:underline;
@@ -37,7 +28,7 @@ a{
         }
         .header_account_info{
             padding-left:10px;
-            font-size:$medium_font_size;
+            font-size:$font-size-medium;
         }
     }
     .tools{
@@ -64,7 +55,7 @@ a{
 		    padding-left: 5px;
 		    height: 30px;
 		    line-height: 30px;
-		    border: 1px solid $standard_font_color;
+		    border: 1px solid $font-color-base;
 		    background: #fff;
     	}
         #headersearchsubmit{
@@ -75,8 +66,8 @@ a{
             background: url("../images/icon-header-search.png") no-repeat;
             border: 0;
             display: block;
-            height: $icon-size;
-            width: $icon-size;
+            height: $icon-size-base;
+            width: $icon-size-base;
             :hover{
                 background:url("../images/icon-header-search-hover.png") no-repeat;
             }
@@ -85,8 +76,8 @@ a{
 }
 
 .navigation-container{
-    font-size:$medium_font_size;
-    color:$standard_font_color;
+    font-size:$font-size-medium;
+    color:$font-color-base;
     height: 30px;
     background: #e4e4e4;
     font-family: "microsoft yahei", Verdana, Arial;
@@ -107,7 +98,7 @@ a{
             padding: 0px 35px;
             display: block;
             text-decoration: none;
-            color: $standard_font_color;
+            color: $font-color-base;
             height: 30px;
             font-weight: bold;
         }
@@ -130,7 +121,7 @@ a{
 .side_navigation{
     float: left;
     margin-left: 106px;
-    width: 224px;
+    width: 229px;
     height:458px;
     background: #FFFFFF;
     #menu-vertical-menu{
@@ -152,10 +143,10 @@ a{
         a{
             display: inline-block;
             text-decoration:none;
-            font-size: $standard_font_size;
+            font-size: $font-size-base;
             height: 24px;
             line-height: 24px;
-            color:$standard_font_color;
+            color:$font-color-base;
             border-top:none;
         }
     } 

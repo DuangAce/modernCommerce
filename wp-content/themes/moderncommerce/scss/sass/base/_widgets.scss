@@ -15,8 +15,8 @@
 	border-bottom: 1px solid black;
     height: 15px;
 	span{
-		background: $whole_page_background;
-	    Z-INDEX: 20;
+		background: $background-color-base;
+	    z-index: 20;
 	    margin-left: 30px;
 	    font-size: 24px;
 	}
@@ -65,7 +65,7 @@
     text-align: center;
     color: #9f9f9f;
     line-height: 30px;
-    font-family: "microsoft yahei", Verdana, Arial;
+    font-family: $font-family-base;
     font-size: 16px;
     min-height:100px;
     i{
@@ -78,7 +78,7 @@
 	float:left;
 	padding: 30px 70px;
 	h3{
-		font-size:$medium_font_size;
+		font-size:$font-size-medium;
 		font-weight: bold;
 	    line-height: 33px;
 	    color: #636363;
@@ -90,14 +90,14 @@
 	}
 	a{
 		text-decoration: none;
-		font-size:$standard_font_size;
+		font-size:$font-size-base;
 		color:#636363;
 	}
 }
 
 .footer_contact{
 	float: left;
-    width: 225px;
+    width: 215px;
     text-align: center;
     padding: 60px 140px;
     .footer_p1{
@@ -109,7 +109,7 @@
     .footer_p2{
 		font-family: "SimSun", Verdana, Arial;
 	    color: #565656;
-	    font-size: $standard_font_size;
+	    font-size: $font-size-base;
 	    line-height: 20px;
 	    padding-bottom: 15px;
     }
@@ -119,8 +119,8 @@
 .footer_copyright{
 	text-align:center;
 	.mc_copyright{
-		font-size: $standard_font_size;
-	    color: $standard_font_color;
+		font-size: $font-size-base;
+	    color: $font-color-base;
 	    padding: 30px 0 30px 0;
 	}
 }

@@ -1,0 +1,26 @@
+//
+// Variables
+// --------------------------------------------------
+
+//Page Width
+$content-width: 1140px;
+
+//== Colors
+$font-color-base: #8F8F8F !default;
+$button-primary: #36a4ef !default;
+$hover-button-primary: darken($button-primary, 5%) !default;
+$link-color-base: #36a4ef !default;
+$hover-link-color-base: darken($link-color-base,5%) !default;
+$background-color-base:#f4f4f4 !default;
+$border-color: #e9e9e9;
+$darker-border:darken($border_color, 5%);
+
+
+//== Typography
+$font-size-base: 12px !default;
+$font-size-medium: ceil(($font-size-base * 1.25)) !default; //15px
+$font-size-large: ceil(($font-size-base * 1.5)) !default; //18px
+$font-family-base: "microsoft yahei", Verdana, Arial !default;
+
+//== Elements
+$icon-size-base:23px !default;

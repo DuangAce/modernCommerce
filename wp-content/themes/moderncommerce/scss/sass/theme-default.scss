@@ -3,12 +3,21 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+
+// Core variables and mixins
+@import "base/variables";
+
+// Reset and dependencies
 @import "compass/reset";
 
-@import "base/_header.scss";
+//Core CSS
+@import "base/scaffolding";
 
-@import "base/_main.scss";
+//CSS Based On Theme
+@import "base/header";
 
-@import "base/_widgets.scss";
+@import "base/main";
 
-@import "base/_woocommerce.scss";
+@import "base/widgets";
+
+@import "base/woocommerce";

@@ -1,0 +1,15 @@
+// All anchor elements' base color
+a{
+    color: $link-color-base;
+    text-decoration: none;
+}
+
+html{
+	font-family:$font-family-base;
+}
+
+// Inner container used for every page
+.content_box_container{ 
+	width:$content-width; 
+	margin:auto;
+}

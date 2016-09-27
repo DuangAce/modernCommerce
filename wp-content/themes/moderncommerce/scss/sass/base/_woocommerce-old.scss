@@ -1,7 +1,7 @@
 .woocommerce-breadcrumb{
   padding: 15px 0px;
   font-size: $font-size-medium;
-  color: $font-size-base;
+  color: $font-color-base;
   a{
     cursor:pointer;
     text-decoration: none;
@@ -16,7 +16,7 @@
   float:right;
   .woocommerce-result-count{
     display: inline-block;
-    color: $font-size-base;
+    color: $font-color-base;
   }
   .woocommerce-ordering{
     display: inline-block;
@@ -25,7 +25,7 @@
       line-height: 40px;
       background: transparent;
       padding: 5px;
-      color: $font-size-base;
+      color: $font-color-base;
       width: 200px;
     }
   }
@@ -39,7 +39,7 @@ ul.products{
     width: 233px;
     height: 375px;
     border: 1px solid #e9e9e9;
-    margin-right: 35px;
+    margin-right: 10px;
     margin-bottom: 35px;
     background: #fff;
     .price-container{
@@ -60,18 +60,18 @@ ul.products{
     a{
       text-decoration: none;
       h3{
-        color: $font-size-base;
+        color: $font-color-base;
         padding: 12px 20px;
       }
       .price{
-        color:$font-size-base;
+        color:$font-color-base;
         ins{
           color: #ff0101;
           text-decoration: none;
         }
       }
       .label-price{
-        color:$font-size-base;
+        color:$font-color-base;
       }
     }
     // Siyu Origin onsale location
@@ -107,10 +107,10 @@ ul.products{
   line-height: 50px;
   float: right;
   background: #FFFFFF;
-  border:1px solid $darker_border;
+  border:1px solid #e9e9e9;
   right: 40px;
   z-index: 20;
-  padding:20px;
+  display: block;
 }
 .product-filter-container{
   background: #f9f9f9;
@@ -147,7 +147,7 @@ ul.products{
 }
 
 h2.widgettitle{
-  color: $font-size-base;
+  color: $font-color-base;
   width: 80px;
   height: 100%;
   display: inline-block;
@@ -185,7 +185,7 @@ li.widget_price_filter{
   line-height: 30px;
   padding: 5px 20px;
   border: 1px solid #eeeeee;
-  color: $font-size-base;
+  color: $font-color-base;
   font-size: $font-size-medium;
   h2{
     display: inline-block;
@@ -240,7 +240,7 @@ li.widget_price_filter{
       }
       th {
         text-align: center;
-        color: $font-size-base;
+        color: $font-color-base;
       }
     }
   }
@@ -252,7 +252,7 @@ td.product-name {
 
 td.product-price{
   @extend td.product-name;
-  color:#8f8f8f;
+  color:$font-color-base;
 }
 
 td.product-subtotal{
@@ -263,7 +263,7 @@ td.product-subtotal{
 td.product-quantity{
   input{
     text-align:center;
-    color:#8f8f8f;
+    color:$font-color-base;
     float: left;
     height: 28px;
     border: none;
@@ -276,13 +276,11 @@ td.product-quantity{
   display:inline-block;
   padding-left: 12px;
   label{
-    color:$font-size-base;
+    color:$font-color-base;
   }
   #coupon_code{
-    padding: 0px 30px;
+    padding:10px 0px;
     border: 1px solid #d8d8d8;
-    height: 39px;
-    line-height: 39px;
   }
   input.button{
     background: transparent;
@@ -311,7 +309,7 @@ input[name="update_cart"]{
 
 .cart-collaterals{
   padding:40px 61px;
-  color:#8f8f8f;
+  color:$font-color-base;
   tr{
     border-bottom: 1px solid #d8d8d8;
   }
@@ -381,69 +379,9 @@ input[name="update_cart"]{
   min-height:260px;
   padding-top: 40px;
   padding-left: 60px;
-  color:$font-size-base;
+  color:$font-color-base;
   a{
     color:$button-primary;
-  }
-  h2{
-    font-weight: bold;
-    color: #333;
-    padding:15px 0px;
-    font-size:$font-size-large;
-  }
-  h3{
-    @extend h2;
-  }
-  mark{
-    background: #efae36;
-    color:#FFF;
-  }
-  .order_details{
-    th,td{
-      text-align: center;
-    }
-    th{
-      height: 40px;
-      line-height:40px;
-      color:#FFF;
-      background-color:$button-primary;
-      border-right: 1px solid #FFF;
-    }
-    td{
-      padding: 20px 70px;
-    }
-  }
-  .customer_details{
-    th,td{
-    text-align: center;
-    }
-    th{
-      height: 40px;
-      line-height:40px;
-      color:#FFF;
-      background-color:$button-primary;
-      border-right: 1px solid #FFF;
-      padding:0px 70px;
-    }
-    td{
-      padding: 20px 70px;
-    }
-  }
-  .woocommerce-MyAccount-orders{
-    th,td{
-    text-align: center;
-    }
-    th{
-      height: 40px;
-      line-height:40px;
-      color:#FFF;
-      background-color:$button-primary;
-      border-right: 1px solid #FFF;
-      padding:0px 70px;
-    }
-    td{
-      padding:20px;
-    }
   }
 }
 
@@ -491,17 +429,13 @@ div.entry-summary{
   width: 450px;
   height: 405px;
   padding: 0px 50px 0px 50px;
-  color:$font-size-base;
+  color:$font-color-base;
   h1{
     padding-left:20px;
     font-size:$font-size-large+5;
     padding-bottom:20px;
     font-weight:bold;
     color:#333;
-  }
-  p.stock.in-stock,div.product_meta{
-    padding-left: 20px;
-    padding-top: 20px;
   }
   .woocommerce-product-rating{
     padding-left:20px;
@@ -555,7 +489,7 @@ div.entry-summary{
     }
     .quantity{
       display:inline-block;
-      input{
+      #number{
         width: 72px;
         height: 30px;
         line-height: 30px;
@@ -609,111 +543,23 @@ button.button{
   h2{
     height: 40px;
     line-height: 40px;
-    padding-left: 20px;
+    padding-left: 70px;
     font-weight: bold;
     border-bottom: 5px solid $button-primary;
     padding-bottom:10px;
   }
   ul.products{
-    padding: 25px 20px;
+    padding: 25px 70px;
   }
 }
 
 .woocommerce{
-  color:$font-size-base;
+  color:$font-color-base;
   h2.login-title{
     font-size:$font-size-large;
     padding:50px 10px;
   }
 }
-
-//Comment
-div#respond{
-  padding-top:20px;
-  h3{
-    padding:10px 0px;
-  }
-  .comment-form-rating{
-    padding:10px 0px;
-    label{
-      width:130px;
-      display:inline-block;
-    }
-    select{
-      background:transparent;
-    }
-  }
-  .comment-form-comment{
-    label{
-      width:130px;
-      display:inline-block;
-    }
-  }
-  input[type="submit"]{
-    display: block;
-    background: $button-primary;
-    border: none;
-    color: #FFF;
-    padding: 10px 0px;
-    font-size: $font-size-medium;
-    letter-spacing: 3px;
-    margin: 20px 0px;
-    width:180px;
-    cursor:pointer;
-    &:hover{
-      background:darken($button-primary, 5%);
-    }
-  }
-}
-//End of Comment
-
-//Detail Pages --- tabs
-.wc-tabs-wrapper{
-  margin-top: 20px;
-  div#reviews{
-    padding-top:35px;
-    h2{
-      font-weight: bold;
-      color: #333;
-      padding:15px 0px;
-      font-size:$font-size-medium;
-    }
-  }
-  div#tab-description{
-    padding:35px;
-    border:1px solid $button-primary;
-    h2{
-      font-weight: bold;
-      color: #333;
-      padding:15px 0px;
-      font-size:$font-size-medium;
-    }
-  }
-}
-.wc-tabs{
-  .current_tag{
-      a{
-        background: $button-primary;
-        color:#FFF;
-      }
-    }
-  li{
-    display:inline-block;
-    a{
-      padding:20px 40px;
-      display:block;
-      margin-right: -4px;
-      height:30px;
-      line-height:30px;
-      color: #333;
-    }
-  }
-  #tab-reviews{
-    display:none;
-  }
-}
-
-//end of tabs
 
 .header-logo{
   padding-left:60px;
@@ -804,7 +650,7 @@ div#respond{
   label{
     width:130px;
     display:inline-block;
-    color:$font-size-base;
+    color:$font-color-base;
     font-size:$font-size-base;
   }
   input[type="email"],input[type="password"],input[type="text"]{
@@ -834,7 +680,7 @@ div#respond{
     display:block;
     min-height:30px;
     line-height:30px;
-    color:$font-size-base;
+    color:$font-color-base;
   }
 }
 
@@ -912,156 +758,3 @@ div#respond{
     }
   }
 }
-
-// billing page
-.woocommerce-billing-fields{
-  h3{
-    padding: 20px 0px;
-    font-weight: bold;
-    color: #333;
-  }
-  label{
-    width: 130px;
-    display: inline-block;
-  }
-  .form-row{
-    margin-bottom:20px;
-    input{
-      height: 25px;
-      padding: 0px 15px;
-    }
-    select{
-      background-color: transparent;
-      width: 203px;
-      height: 30px;
-    }
-  }
-  #billing_address_2_field{
-    padding-left:130px;
-  }
-}
-
-.woocommerce-shipping-fields{
-  h3{
-    font-weight: bold;
-    color: #333;
-    padding:10px 0px;
-  }
-  label{
-    width: 130px;
-    display: inline-block;
-  }
-  .form-row{
-    margin-bottom:20px;
-  }
-  textarea{
-    height: 100px;
-    width: 200px;
-  }
-}
-
-#order_review_heading{
-  font-weight: bold;
-  color: #333;
-  padding:10px 0px;
-  font-size:$font-size-large;
-}
-
-table.woocommerce-checkout-review-order-table{
-  th,td{
-    text-align: center;
-  }
-  th{
-    height: 40px;
-    line-height:40px;
-    color:#FFF;
-    background-color:$button-primary;
-    border-right: 1px solid #FFF;
-  }
-  td{
-    padding: 20px 70px;
-  }
-}
-
-.wc_payment_methods{
-  margin-top:25px;
-  li{
-    margin-bottom:25px;
-    label{
-      display: inline-block;
-      height: 40px;
-      line-height: 40px;
-    }
-  }
-}
-
-.thankyou-page{
-  .woocommerce-thankyou-order-received{
-    margin-bottom: 20px;
-  }
-  ul.woocommerce-thankyou-order-details{
-    li{
-      margin-bottom:20px;
-    }
-  }
-  th,td{
-    text-align: center;
-  }
-  th{
-    height: 40px;
-    line-height:40px;
-    color:#FFF;
-    background-color:$button-primary;
-    border-right: 1px solid #FFF;
-  }
-  td{
-    padding: 20px 70px;
-  }
-  h2{
-    font-weight: bold;
-    color: #333;
-    padding:15px 0px;
-    font-size:$font-size-large;
-  }
-  h3{
-    font-weight: bold;
-    color: #333;
-    padding:15px 0px;
-    font-size:$font-size-medium;
-  }
-  .account_number{
-    font-weight:bold;
-  }
-  .wc-bacs-bank-details{
-    padding-bottom:20px;
-  }
-  .customer_details{
-    th{
-      padding: 0px 70px;
-    }
-  }
-}
-
-.return-to-shop{
-  a{
-    color:$button-primary;
-  }
-}
-
-#place_order{
-  display: block;
-  width: 150px;
-  height: 60px;
-  border: none;
-  background: $button-primary;
-  color: #FFF;
-  cursor:pointer;
-  &:hover{
-    background:darken($button-primary, 5%);
-  }
-}
-
-.cart_counter{
-  color:#ff503e;
-}
-
