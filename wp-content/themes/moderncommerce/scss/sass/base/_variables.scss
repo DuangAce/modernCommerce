@@ -1,16 +1,29 @@
 //
 // Variables
-// --------------------------------------------------
+// -------------------------------------------------------
 
-//Page Width
+//== Height and Width
+//--------------------------------------------------------
+$product-list-height-min: 420px;
+$product-list-width:233px;
 $content-width: 1140px;
 
 //== Colors
+//---------------------------------------------------------
+
+//-- Font --
 $font-color-base: #8F8F8F !default;
+$font-color-darker: darken($font-color-base,15%) !default;
+
+//-- Button --
 $button-primary: #36a4ef !default;
 $hover-button-primary: darken($button-primary, 5%) !default;
+
+//-- Link --
 $link-color-base: #36a4ef !default;
 $hover-link-color-base: darken($link-color-base,5%) !default;
+
+//-- Background and Border Color --
 $background-color-base:#f4f4f4 !default;
 $border-color: #e9e9e9;
 $darker-border:darken($border_color, 5%);
@@ -18,16 +31,18 @@ $onsale-color-base: #ff6f4c;
 
 
 //== Typography
+//----------------------------------------------------------
 $font-size-base: 12px !default;
 $font-size-medium: ceil(($font-size-base * 1.25)) !default; //15px
 $font-size-large: ceil(($font-size-base * 1.5)) !default; //18px
 $font-family-base: "microsoft yahei", Verdana, Arial !default;
 
 //== Elements
+//-----------------------------------------------------------
 $icon-size-base:23px !default;
 
 //== Grid system
-//
+//-----------------------------------------------------------
 //## Define custom responsive grid.
 // number of columns in the grid
 // Why did bootstrap team chose 12 instead of other choices?

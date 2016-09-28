@@ -31,17 +31,32 @@
   }
 }
 
+//== Price CSS
+//-------------------------------
+.price-label{
+  display:inline-block;
+  padding-left:20px;
+}
+.price{
+  display:inline-block;
+  padding: 20px 0px 0px 20px;
+  color:darken($button-primary, 20%);
+  font-size:$font-size-large;
+  font-weight:bold;
+}
+
+// Product Unorder list Style Sheet
 ul.products{
   padding: 75px 10px;
   li{
     position: relative;
     display: inline-block;
-    width: 233px;
-    height: 375px;
+    width: $product-list-width;
+    min-height: $product-list-height-min;
     border: 1px solid #e9e9e9;
     margin-right: 35px;
     margin-bottom: 35px;
-    background: #fff;
+    background: #FFFFFF;
     .price-container{
       display: block;
       padding-left: 20px;
@@ -60,13 +75,14 @@ ul.products{
     a{
       text-decoration: none;
       h3{
-        color: $font-size-base;
-        padding: 12px 20px;
+        color: $font-color-darker;
+        padding: 15px 0px 0px 20px;
       }
+      //== price css In loop
       .price{
         color:$font-size-base;
         ins{
-          color: #ff0101;
+          color: $onsale-color-base;
           text-decoration: none;
         }
       }

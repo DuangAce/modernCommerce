@@ -27,6 +27,9 @@
                 $('div#tab-description').css("display",'none');
                 $('div#tab-reviews').css("display",'block');
             }
+            $('html, body').animate({
+                scrollTop: $("[href='#tab-reviews']").offset().top
+            }, 500);
         });
 
         $("[href='#tab-description']").click(function(){
@@ -38,9 +41,10 @@
                 $('div#tab-reviews').css("display",'none');
                 $('div#tab-description').css("display",'block');
             }
+            $('html, body').animate({
+                scrollTop: $("[href='#tab-description']").offset().top-200
+            }, 500);
         });
-
-
     });
 
 

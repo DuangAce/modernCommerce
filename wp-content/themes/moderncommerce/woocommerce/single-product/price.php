@@ -47,7 +47,7 @@ global $product;
 			<label for="final-price">商场价:</label><span id="final-price" class="final-price"><?php echo get_woocommerce_currency_symbol(); echo $product->regular_price; ?></span>
 		</div>
 	<?php } else { ?>
-		<p class="price"><?php echo $product->get_price_html(); ?></p>
+		<label class="price-label">商场价:</label><p class="price"><?php echo $product->get_price_html(); ?></p>
 	<?php } ?>
 	<meta itemprop="price" content="<?php echo esc_attr( $product->get_display_price() ); ?>" />
 	<meta itemprop="priceCurrency" content="<?php echo esc_attr( get_woocommerce_currency() ); ?>" />

@@ -30,11 +30,7 @@
 	padding-top:20px;
 	min-height:50px;
 	img:hover{
-		-moz-transform: scale(1.05);
-		-webkit-transform: scale(1.05);
-		-o-transform: scale(1.05);
-		-ms-transform: scale(1.05);
-		transform: scale(1.05);
+		@include tranform-scale(1.05);
 	}
 	.vertical_banner{
 		float: left;
