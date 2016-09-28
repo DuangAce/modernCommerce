@@ -84,6 +84,563 @@ html {
   margin: auto;
 }
 
+/* line 5, ../scss/sass/base/_grid.scss */
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* line 14, ../scss/sass/base/mixins/_clearfix.scss */
+.container-fluid:before, .container-fluid:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../scss/sass/base/mixins/_clearfix.scss */
+.container-fluid:after {
+  clear: both;
+}
+
+/* line 13, ../scss/sass/base/_grid.scss */
+.container-fluid-nopadding {
+  margin: 0 auto;
+}
+/* line 14, ../scss/sass/base/mixins/_clearfix.scss */
+.container-fluid-nopadding:before, .container-fluid-nopadding:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../scss/sass/base/mixins/_clearfix.scss */
+.container-fluid-nopadding:after {
+  clear: both;
+}
+
+/* line 20, ../scss/sass/base/_grid.scss */
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+/* line 14, ../scss/sass/base/mixins/_clearfix.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+/* line 19, ../scss/sass/base/mixins/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+/* line 35, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 52, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-1 {
+  width: 8.33333%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-2 {
+  width: 16.66667%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-3 {
+  width: 25%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-4 {
+  width: 33.33333%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-5 {
+  width: 41.66667%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-6 {
+  width: 50%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-7 {
+  width: 58.33333%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-8 {
+  width: 66.66667%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-9 {
+  width: 75%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-10 {
+  width: 83.33333%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-11 {
+  width: 91.66667%;
+}
+
+/* line 60, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-12 {
+  width: 100%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-1 {
+  margin-left: 8.33333%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-2 {
+  margin-left: 16.66667%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-4 {
+  margin-left: 33.33333%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-5 {
+  margin-left: 41.66667%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-7 {
+  margin-left: 58.33333%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-8 {
+  margin-left: 66.66667%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-10 {
+  margin-left: 83.33333%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-11 {
+  margin-left: 91.66667%;
+}
+
+/* line 65, ../scss/sass/base/mixins/_grid.scss */
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 768px) {
+  /* line 52, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-1 {
+    width: 8.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-2 {
+    width: 16.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-4 {
+    width: 33.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-5 {
+    width: 41.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-7 {
+    width: 58.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-8 {
+    width: 66.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-10 {
+    width: 83.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-11 {
+    width: 91.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 52, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-1 {
+    width: 8.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-2 {
+    width: 16.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-4 {
+    width: 33.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-5 {
+    width: 41.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-7 {
+    width: 58.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-8 {
+    width: 66.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-10 {
+    width: 83.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-11 {
+    width: 91.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 52, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-1 {
+    width: 8.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-2 {
+    width: 16.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-4 {
+    width: 33.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-5 {
+    width: 41.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-7 {
+    width: 58.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-8 {
+    width: 66.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-10 {
+    width: 83.33333%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-11 {
+    width: 91.66667%;
+  }
+
+  /* line 60, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-1 {
+    margin-left: 8.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-2 {
+    margin-left: 16.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-4 {
+    margin-left: 33.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-5 {
+    margin-left: 41.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-7 {
+    margin-left: 58.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-8 {
+    margin-left: 66.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-10 {
+    margin-left: 83.33333%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-11 {
+    margin-left: 91.66667%;
+  }
+
+  /* line 65, ../scss/sass/base/mixins/_grid.scss */
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
 /* line 6, ../scss/sass/base/_header.scss */
 .header_topbar {
   position: relative;
@@ -226,7 +783,7 @@ html {
 .side_navigation {
   float: left;
   margin-left: 106px;
-  width: 224px;
+  width: 229px;
   height: 458px;
   background: #FFFFFF;
 }
@@ -849,7 +1406,7 @@ input[name="update_cart"]:hover {
 
 /* line 361, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-MyAccount-navigation {
-  width: 224px;
+  width: 230px;
   text-align: center;
   float: left;
 }
@@ -961,16 +1518,43 @@ p.woocommerce-FormRow {
 
 /* line 466, ../scss/sass/base/_woocommerce.scss */
 .onsale {
-  float: right;
-  display: none;
+  position: absolute;
+  /* z-index: 100; */
+  right: 0;
+  width: 40px;
+  height: 50px;
+  background-color: #ff6f4c;
+  color: #FFF;
+  text-align: center;
 }
 
-/* line 472, ../scss/sass/base/_woocommerce.scss */
+/* line 477, ../scss/sass/base/_woocommerce.scss */
+.onsale-single {
+  position: absolute;
+  /* z-index: 100; */
+  left: 0;
+  width: 40px;
+  height: 50px;
+  background-color: #ff6f4c;
+  color: #FFF;
+  text-align: center;
+}
+
+/* line 488, ../scss/sass/base/_woocommerce.scss */
+.off-percent {
+  margin-top: 10px;
+  display: block;
+  font-size: 13px;
+  text-indent: 2px;
+}
+
+/* line 496, ../scss/sass/base/_woocommerce.scss */
 div.type-product {
   max-height: 1779px;
+  position: relative;
 }
 
-/* line 475, ../scss/sass/base/_woocommerce.scss */
+/* line 500, ../scss/sass/base/_woocommerce.scss */
 div.images {
   float: left;
   border: 1px solid #ccc;
@@ -979,13 +1563,13 @@ div.images {
   overflow: hidden;
   text-align: center;
 }
-/* line 482, ../scss/sass/base/_woocommerce.scss */
+/* line 507, ../scss/sass/base/_woocommerce.scss */
 div.images img {
   max-height: 398px;
   max-width: 398px;
 }
 
-/* line 489, ../scss/sass/base/_woocommerce.scss */
+/* line 514, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary {
   display: inline-block;
   width: 450px;
@@ -993,7 +1577,7 @@ div.entry-summary {
   padding: 0px 50px 0px 50px;
   color: 12px;
 }
-/* line 495, ../scss/sass/base/_woocommerce.scss */
+/* line 520, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary h1 {
   padding-left: 20px;
   font-size: 23px;
@@ -1001,78 +1585,78 @@ div.entry-summary h1 {
   font-weight: bold;
   color: #333;
 }
-/* line 502, ../scss/sass/base/_woocommerce.scss */
+/* line 527, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary p.stock.in-stock, div.entry-summary div.product_meta {
   padding-left: 20px;
   padding-top: 20px;
 }
-/* line 506, ../scss/sass/base/_woocommerce.scss */
+/* line 531, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .woocommerce-product-rating {
   padding-left: 20px;
 }
-/* line 509, ../scss/sass/base/_woocommerce.scss */
+/* line 534, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .origin-price {
   margin-top: 20px;
   height: 30px;
   line-height: 30px;
   background: #f7f7f7;
 }
-/* line 514, ../scss/sass/base/_woocommerce.scss */
+/* line 539, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .origin-price label, div.entry-summary .origin-price .user-login .login-box form .lost-password, .user-login .login-box form div.entry-summary .origin-price .lost-password {
   padding-left: 20px;
   padding-right: 50px;
 }
-/* line 518, ../scss/sass/base/_woocommerce.scss */
+/* line 543, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .origin-price #origin-price {
   text-decoration: line-through;
 }
-/* line 522, ../scss/sass/base/_woocommerce.scss */
+/* line 547, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .special-price {
   margin-top: 5px;
   height: 30px;
   line-height: 30px;
   background: #f7f7f7;
 }
-/* line 527, ../scss/sass/base/_woocommerce.scss */
+/* line 552, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .special-price label, div.entry-summary .special-price .user-login .login-box form .lost-password, .user-login .login-box form div.entry-summary .special-price .lost-password {
   padding-left: 20px;
   padding-right: 50px;
 }
-/* line 531, ../scss/sass/base/_woocommerce.scss */
+/* line 556, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .special-price #special-price {
   color: #36a4ef;
   font-size: 28px;
   font-weight: bold;
 }
-/* line 537, ../scss/sass/base/_woocommerce.scss */
+/* line 562, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .description-container {
   margin-top: 20px;
   color: #333;
   background: #f7f7f7;
   padding: 20px;
 }
-/* line 542, ../scss/sass/base/_woocommerce.scss */
+/* line 567, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary .description-container .descrtion-label {
   font-weight: bold;
   height: 30px;
   line-height: 30px;
 }
-/* line 548, ../scss/sass/base/_woocommerce.scss */
+/* line 573, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary form.cart {
   padding-top: 20px;
   padding-left: 2px;
   padding-bottom: 20px;
 }
-/* line 552, ../scss/sass/base/_woocommerce.scss */
+/* line 577, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary form.cart label, div.entry-summary .user-login .login-box form.cart .lost-password, .user-login .login-box div.entry-summary form.cart .lost-password {
   padding-left: 20px;
   padding-right: 50px;
 }
-/* line 556, ../scss/sass/base/_woocommerce.scss */
+/* line 581, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary form.cart .quantity {
   display: inline-block;
 }
-/* line 558, ../scss/sass/base/_woocommerce.scss */
+/* line 583, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary form.cart .quantity input {
   width: 72px;
   height: 30px;
@@ -1085,7 +1669,7 @@ div.entry-summary form.cart .quantity input {
   padding: 0px;
   border-radius: 0px;
 }
-/* line 570, ../scss/sass/base/_woocommerce.scss */
+/* line 595, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary form.cart .quantity .product_quantity_minus, div.entry-summary form.cart .quantity .product_quantity_plus {
   text-align: center;
   width: 33px;
@@ -1098,16 +1682,16 @@ div.entry-summary form.cart .quantity .product_quantity_minus, div.entry-summary
   color: #a7a7a7;
   margin: 0;
 }
-/* line 581, ../scss/sass/base/_woocommerce.scss */
+/* line 606, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary form.cart .quantity .product_quantity_minus:hover, div.entry-summary form.cart .quantity .product_quantity_plus:hover {
   color: #36a4ef;
 }
-/* line 587, ../scss/sass/base/_woocommerce.scss */
+/* line 612, ../scss/sass/base/_woocommerce.scss */
 div.entry-summary span.posted_in {
   padding-left: 20px;
 }
 
-/* line 592, ../scss/sass/base/_woocommerce.scss */
+/* line 617, ../scss/sass/base/_woocommerce.scss */
 button.button {
   display: block;
   margin-left: 20px;
@@ -1120,12 +1704,16 @@ button.button {
   font-weight: bold;
   cursor: pointer;
 }
-/* line 603, ../scss/sass/base/_woocommerce.scss */
+/* line 628, ../scss/sass/base/_woocommerce.scss */
 button.button:hover {
   background: #1d98ec;
 }
 
-/* line 609, ../scss/sass/base/_woocommerce.scss */
+/* line 633, ../scss/sass/base/_woocommerce.scss */
+.related {
+  margin-top: 10px;
+}
+/* line 635, ../scss/sass/base/_woocommerce.scss */
 .related h2, .related .woocommerce-MyAccount-content h3, .woocommerce-MyAccount-content .related h3 {
   height: 40px;
   line-height: 40px;
@@ -1134,48 +1722,59 @@ button.button:hover {
   border-bottom: 5px solid #36a4ef;
   padding-bottom: 10px;
 }
-/* line 617, ../scss/sass/base/_woocommerce.scss */
+/* line 643, ../scss/sass/base/_woocommerce.scss */
 .related ul.products {
   padding: 25px 20px;
 }
 
-/* line 622, ../scss/sass/base/_woocommerce.scss */
+/* line 648, ../scss/sass/base/_woocommerce.scss */
 .woocommerce {
   color: 12px;
 }
-/* line 624, ../scss/sass/base/_woocommerce.scss */
+/* line 650, ../scss/sass/base/_woocommerce.scss */
 .woocommerce h2.login-title, .woocommerce .woocommerce-MyAccount-content h3.login-title, .woocommerce-MyAccount-content .woocommerce h3.login-title {
   font-size: 18px;
   padding: 50px 10px;
 }
 
-/* line 631, ../scss/sass/base/_woocommerce.scss */
+/* line 657, ../scss/sass/base/_woocommerce.scss */
+.value select {
+  background-color: transparent;
+  height: 40px;
+  width: 120px;
+  padding-left: 20px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+
+/* line 667, ../scss/sass/base/_woocommerce.scss */
 div#respond {
   padding-top: 20px;
 }
-/* line 633, ../scss/sass/base/_woocommerce.scss */
+/* line 669, ../scss/sass/base/_woocommerce.scss */
 div#respond h3 {
   padding: 10px 0px;
+  border-bottom: 2px solid #36a4ef;
 }
-/* line 636, ../scss/sass/base/_woocommerce.scss */
+/* line 673, ../scss/sass/base/_woocommerce.scss */
 div#respond .comment-form-rating {
   padding: 10px 0px;
 }
-/* line 638, ../scss/sass/base/_woocommerce.scss */
+/* line 675, ../scss/sass/base/_woocommerce.scss */
 div#respond .comment-form-rating label, div#respond .comment-form-rating .user-login .login-box form .lost-password, .user-login .login-box form div#respond .comment-form-rating .lost-password {
   width: 130px;
   display: inline-block;
 }
-/* line 642, ../scss/sass/base/_woocommerce.scss */
+/* line 679, ../scss/sass/base/_woocommerce.scss */
 div#respond .comment-form-rating select {
   background: transparent;
 }
-/* line 647, ../scss/sass/base/_woocommerce.scss */
+/* line 684, ../scss/sass/base/_woocommerce.scss */
 div#respond .comment-form-comment label, div#respond .comment-form-comment .user-login .login-box form .lost-password, .user-login .login-box form div#respond .comment-form-comment .lost-password {
   width: 130px;
   display: inline-block;
 }
-/* line 652, ../scss/sass/base/_woocommerce.scss */
+/* line 689, ../scss/sass/base/_woocommerce.scss */
 div#respond input[type="submit"] {
   display: block;
   background: #36a4ef;
@@ -1188,73 +1787,64 @@ div#respond input[type="submit"] {
   width: 180px;
   cursor: pointer;
 }
-/* line 663, ../scss/sass/base/_woocommerce.scss */
+/* line 700, ../scss/sass/base/_woocommerce.scss */
 div#respond input[type="submit"]:hover {
   background: #1e99ed;
 }
 
-/* line 671, ../scss/sass/base/_woocommerce.scss */
+/* line 708, ../scss/sass/base/_woocommerce.scss */
 .wc-tabs-wrapper {
   margin-top: 20px;
 }
-/* line 673, ../scss/sass/base/_woocommerce.scss */
-.wc-tabs-wrapper div#reviews {
-  padding-top: 35px;
-}
-/* line 675, ../scss/sass/base/_woocommerce.scss */
-.wc-tabs-wrapper div#reviews h2, .wc-tabs-wrapper div#reviews .woocommerce-MyAccount-content h3, .woocommerce-MyAccount-content .wc-tabs-wrapper div#reviews h3 {
-  font-weight: bold;
-  color: #333;
-  padding: 15px 0px;
-  font-size: 15px;
-}
-/* line 682, ../scss/sass/base/_woocommerce.scss */
-.wc-tabs-wrapper div#tab-description {
+/* line 710, ../scss/sass/base/_woocommerce.scss */
+.wc-tabs-wrapper div#tab-description, .wc-tabs-wrapper div#tab-reviews {
   padding: 35px;
   border: 1px solid #36a4ef;
 }
-/* line 685, ../scss/sass/base/_woocommerce.scss */
-.wc-tabs-wrapper div#tab-description h2, .wc-tabs-wrapper div#tab-description .woocommerce-MyAccount-content h3, .woocommerce-MyAccount-content .wc-tabs-wrapper div#tab-description h3 {
+/* line 713, ../scss/sass/base/_woocommerce.scss */
+.wc-tabs-wrapper div#tab-description h2, .wc-tabs-wrapper div#tab-description .woocommerce-MyAccount-content h3, .woocommerce-MyAccount-content .wc-tabs-wrapper div#tab-description h3, .wc-tabs-wrapper div#tab-reviews h2, .wc-tabs-wrapper div#tab-reviews .woocommerce-MyAccount-content h3, .woocommerce-MyAccount-content .wc-tabs-wrapper div#tab-reviews h3 {
   font-weight: bold;
   color: #333;
   padding: 15px 0px;
   font-size: 15px;
 }
 
-/* line 695, ../scss/sass/base/_woocommerce.scss */
+/* line 723, ../scss/sass/base/_woocommerce.scss */
 .wc-tabs .current_tag a {
   background: #36a4ef;
   color: #FFF;
 }
-/* line 700, ../scss/sass/base/_woocommerce.scss */
+/* line 728, ../scss/sass/base/_woocommerce.scss */
 .wc-tabs li {
   display: inline-block;
+  background-color: #efefef;
+  margin-right: -4px;
 }
-/* line 702, ../scss/sass/base/_woocommerce.scss */
+/* line 732, ../scss/sass/base/_woocommerce.scss */
 .wc-tabs li a {
   padding: 20px 40px;
   display: block;
-  margin-right: -4px;
   height: 30px;
   line-height: 30px;
   color: #333;
 }
-/* line 711, ../scss/sass/base/_woocommerce.scss */
-.wc-tabs #tab-reviews {
+
+/* line 743, ../scss/sass/base/_woocommerce.scss */
+#tab-reviews {
   display: none;
 }
 
-/* line 718, ../scss/sass/base/_woocommerce.scss */
+/* line 749, ../scss/sass/base/_woocommerce.scss */
 .header-logo {
   padding-left: 60px;
   padding-bottom: 25px;
 }
 
-/* line 724, ../scss/sass/base/_woocommerce.scss */
+/* line 755, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-background {
   position: relative;
 }
-/* line 728, ../scss/sass/base/_woocommerce.scss */
+/* line 759, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form {
   position: absolute;
   left: 50%;
@@ -1267,7 +1857,7 @@ div#respond input[type="submit"]:hover {
   z-index: 100;
   margin-left: 200px;
 }
-/* line 739, ../scss/sass/base/_woocommerce.scss */
+/* line 770, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form input[type="text"], .user-login .login-box form input[type="password"] {
   all: unset;
   width: 270px;
@@ -1278,11 +1868,11 @@ div#respond input[type="submit"]:hover {
   margin-bottom: 20px;
   position: relative;
 }
-/* line 748, ../scss/sass/base/_woocommerce.scss */
+/* line 779, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form input[type="text"]:hover, .user-login .login-box form input[type="text"]:focus, .user-login .login-box form input[type="password"]:hover, .user-login .login-box form input[type="password"]:focus {
   border: 1px solid #555;
 }
-/* line 752, ../scss/sass/base/_woocommerce.scss */
+/* line 783, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form input[type="submit"] {
   display: block;
   width: 100%;
@@ -1293,26 +1883,26 @@ div#respond input[type="submit"]:hover {
   font-size: 16px;
   letter-spacing: 3px;
 }
-/* line 761, ../scss/sass/base/_woocommerce.scss */
+/* line 792, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form input[type="submit"]:hover {
   background: #ff4342;
 }
-/* line 765, ../scss/sass/base/_woocommerce.scss */
+/* line 796, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form label, .user-login .login-box form .lost-password {
   line-height: 50px;
   height: 50px;
 }
-/* line 769, ../scss/sass/base/_woocommerce.scss */
+/* line 800, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form i {
   height: 21px;
   width: 21px;
   position: absolute;
 }
-/* line 775, ../scss/sass/base/_woocommerce.scss */
+/* line 806, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form .lost-password {
   float: right;
 }
-/* line 780, ../scss/sass/base/_woocommerce.scss */
+/* line 811, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form .login-title {
   padding: 25px 0px;
   float: left;
@@ -1322,28 +1912,28 @@ div#respond input[type="submit"]:hover {
   height: 30px;
   line-height: 30px;
 }
-/* line 789, ../scss/sass/base/_woocommerce.scss */
+/* line 820, ../scss/sass/base/_woocommerce.scss */
 .user-login .login-box form span {
   font-size: 12px;
   height: 79px;
   line-height: 79px;
-  padding-left: 53px;
+  padding-left: 45px;
   padding-top: 25px;
 }
 
-/* line 801, ../scss/sass/base/_woocommerce.scss */
+/* line 832, ../scss/sass/base/_woocommerce.scss */
 .registeration-container {
   padding-left: 100px;
   padding-top: 40px;
 }
-/* line 804, ../scss/sass/base/_woocommerce.scss */
+/* line 835, ../scss/sass/base/_woocommerce.scss */
 .registeration-container label, .registeration-container .user-login .login-box form .lost-password, .user-login .login-box form .registeration-container .lost-password {
   width: 130px;
   display: inline-block;
   color: 12px;
   font-size: 12px;
 }
-/* line 810, ../scss/sass/base/_woocommerce.scss */
+/* line 841, ../scss/sass/base/_woocommerce.scss */
 .registeration-container input[type="email"], .registeration-container input[type="password"], .registeration-container input[type="text"] {
   display: inline-block;
   width: 270px;
@@ -1351,7 +1941,7 @@ div#respond input[type="submit"]:hover {
   padding-left: 10px;
   border: 1px solid #cfcfcf;
 }
-/* line 817, ../scss/sass/base/_woocommerce.scss */
+/* line 848, ../scss/sass/base/_woocommerce.scss */
 .registeration-container input[type="submit"] {
   display: block;
   width: 310px;
@@ -1362,15 +1952,15 @@ div#respond input[type="submit"]:hover {
   font-size: 16px;
   letter-spacing: 3px;
 }
-/* line 826, ../scss/sass/base/_woocommerce.scss */
+/* line 857, ../scss/sass/base/_woocommerce.scss */
 .registeration-container input[type="submit"]:hover {
   background: #ff4342;
 }
-/* line 830, ../scss/sass/base/_woocommerce.scss */
+/* line 861, ../scss/sass/base/_woocommerce.scss */
 .registeration-container .required {
   padding: 0px 5px;
 }
-/* line 833, ../scss/sass/base/_woocommerce.scss */
+/* line 864, ../scss/sass/base/_woocommerce.scss */
 .registeration-container .terms-conditions {
   display: block;
   min-height: 30px;
@@ -1378,7 +1968,7 @@ div#respond input[type="submit"]:hover {
   color: 12px;
 }
 
-/* line 841, ../scss/sass/base/_woocommerce.scss */
+/* line 872, ../scss/sass/base/_woocommerce.scss */
 .password-strong {
   width: 222px;
   height: 10px;
@@ -1386,7 +1976,7 @@ div#respond input[type="submit"]:hover {
   margin-top: 8px;
   margin-bottom: 5px;
 }
-/* line 847, ../scss/sass/base/_woocommerce.scss */
+/* line 878, ../scss/sass/base/_woocommerce.scss */
 .password-strong i {
   float: left;
   width: 33.33%;
@@ -1394,44 +1984,44 @@ div#respond input[type="submit"]:hover {
   zoom: 1;
   display: block;
 }
-/* line 854, ../scss/sass/base/_woocommerce.scss */
+/* line 885, ../scss/sass/base/_woocommerce.scss */
 .password-strong i.strong-01 {
   background: #4bddb9;
 }
-/* line 857, ../scss/sass/base/_woocommerce.scss */
+/* line 888, ../scss/sass/base/_woocommerce.scss */
 .password-strong i.strong-02 {
   background: #ddb94b;
 }
-/* line 860, ../scss/sass/base/_woocommerce.scss */
+/* line 891, ../scss/sass/base/_woocommerce.scss */
 .password-strong i.strong-03 {
   background: #fa1015;
 }
 
-/* line 865, ../scss/sass/base/_woocommerce.scss */
+/* line 896, ../scss/sass/base/_woocommerce.scss */
 .strong-label {
   display: inline-block;
 }
 
-/* line 869, ../scss/sass/base/_woocommerce.scss */
+/* line 900, ../scss/sass/base/_woocommerce.scss */
 .password-strong {
   display: inline-block;
 }
 
-/* line 873, ../scss/sass/base/_woocommerce.scss */
+/* line 904, ../scss/sass/base/_woocommerce.scss */
 .icon-login-user {
   background: url("../images/icon-login-user.gif") no-repeat;
   top: 100px;
   left: 28px;
 }
 
-/* line 879, ../scss/sass/base/_woocommerce.scss */
+/* line 910, ../scss/sass/base/_woocommerce.scss */
 .icon-login-password {
   background: url("../images/icon-login-password.gif") no-repeat;
   top: 184px;
   left: 28px;
 }
 
-/* line 887, ../scss/sass/base/_woocommerce.scss */
+/* line 918, ../scss/sass/base/_woocommerce.scss */
 .cart_item #number {
   width: 72px;
   height: 30px;
@@ -1444,7 +2034,7 @@ div#respond input[type="submit"]:hover {
   padding: 0px;
   border-radius: 0px;
 }
-/* line 899, ../scss/sass/base/_woocommerce.scss */
+/* line 930, ../scss/sass/base/_woocommerce.scss */
 .cart_item .product_quantity_minus, .cart_item .product_quantity_plus {
   text-align: center;
   width: 33px;
@@ -1457,64 +2047,64 @@ div#respond input[type="submit"]:hover {
   color: #a7a7a7;
   margin: 0;
 }
-/* line 910, ../scss/sass/base/_woocommerce.scss */
+/* line 941, ../scss/sass/base/_woocommerce.scss */
 .cart_item .product_quantity_minus:hover, .cart_item .product_quantity_plus:hover {
   color: #36a4ef;
 }
 
-/* line 918, ../scss/sass/base/_woocommerce.scss */
+/* line 949, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-billing-fields h3 {
   padding: 20px 0px;
   font-weight: bold;
   color: #333;
 }
-/* line 923, ../scss/sass/base/_woocommerce.scss */
+/* line 954, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-billing-fields label, .woocommerce-billing-fields .user-login .login-box form .lost-password, .user-login .login-box form .woocommerce-billing-fields .lost-password {
   width: 130px;
   display: inline-block;
 }
-/* line 927, ../scss/sass/base/_woocommerce.scss */
+/* line 958, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-billing-fields .form-row {
   margin-bottom: 20px;
 }
-/* line 929, ../scss/sass/base/_woocommerce.scss */
+/* line 960, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-billing-fields .form-row input {
   height: 25px;
   padding: 0px 15px;
 }
-/* line 933, ../scss/sass/base/_woocommerce.scss */
+/* line 964, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-billing-fields .form-row select {
   background-color: transparent;
   width: 203px;
   height: 30px;
 }
-/* line 939, ../scss/sass/base/_woocommerce.scss */
+/* line 970, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-billing-fields #billing_address_2_field {
   padding-left: 130px;
 }
 
-/* line 945, ../scss/sass/base/_woocommerce.scss */
+/* line 976, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-shipping-fields h3 {
   font-weight: bold;
   color: #333;
   padding: 10px 0px;
 }
-/* line 950, ../scss/sass/base/_woocommerce.scss */
+/* line 981, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-shipping-fields label, .woocommerce-shipping-fields .user-login .login-box form .lost-password, .user-login .login-box form .woocommerce-shipping-fields .lost-password {
   width: 130px;
   display: inline-block;
 }
-/* line 954, ../scss/sass/base/_woocommerce.scss */
+/* line 985, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-shipping-fields .form-row {
   margin-bottom: 20px;
 }
-/* line 957, ../scss/sass/base/_woocommerce.scss */
+/* line 988, ../scss/sass/base/_woocommerce.scss */
 .woocommerce-shipping-fields textarea {
   height: 100px;
   width: 200px;
 }
 
-/* line 963, ../scss/sass/base/_woocommerce.scss */
+/* line 994, ../scss/sass/base/_woocommerce.scss */
 #order_review_heading {
   font-weight: bold;
   color: #333;
@@ -1522,11 +2112,11 @@ div#respond input[type="submit"]:hover {
   font-size: 18px;
 }
 
-/* line 971, ../scss/sass/base/_woocommerce.scss */
+/* line 1002, ../scss/sass/base/_woocommerce.scss */
 table.woocommerce-checkout-review-order-table th, table.woocommerce-checkout-review-order-table td {
   text-align: center;
 }
-/* line 974, ../scss/sass/base/_woocommerce.scss */
+/* line 1005, ../scss/sass/base/_woocommerce.scss */
 table.woocommerce-checkout-review-order-table th {
   height: 40px;
   line-height: 40px;
@@ -1534,39 +2124,39 @@ table.woocommerce-checkout-review-order-table th {
   background-color: #36a4ef;
   border-right: 1px solid #FFF;
 }
-/* line 981, ../scss/sass/base/_woocommerce.scss */
+/* line 1012, ../scss/sass/base/_woocommerce.scss */
 table.woocommerce-checkout-review-order-table td {
   padding: 20px 70px;
 }
 
-/* line 986, ../scss/sass/base/_woocommerce.scss */
+/* line 1017, ../scss/sass/base/_woocommerce.scss */
 .wc_payment_methods {
   margin-top: 25px;
 }
-/* line 988, ../scss/sass/base/_woocommerce.scss */
+/* line 1019, ../scss/sass/base/_woocommerce.scss */
 .wc_payment_methods li {
   margin-bottom: 25px;
 }
-/* line 990, ../scss/sass/base/_woocommerce.scss */
+/* line 1021, ../scss/sass/base/_woocommerce.scss */
 .wc_payment_methods li label, .wc_payment_methods li .user-login .login-box form .lost-password, .user-login .login-box form .wc_payment_methods li .lost-password {
   display: inline-block;
   height: 40px;
   line-height: 40px;
 }
 
-/* line 999, ../scss/sass/base/_woocommerce.scss */
+/* line 1030, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page .woocommerce-thankyou-order-received {
   margin-bottom: 20px;
 }
-/* line 1003, ../scss/sass/base/_woocommerce.scss */
+/* line 1034, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page ul.woocommerce-thankyou-order-details li {
   margin-bottom: 20px;
 }
-/* line 1007, ../scss/sass/base/_woocommerce.scss */
+/* line 1038, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page th, .thankyou-page td {
   text-align: center;
 }
-/* line 1010, ../scss/sass/base/_woocommerce.scss */
+/* line 1041, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page th {
   height: 40px;
   line-height: 40px;
@@ -1574,43 +2164,43 @@ table.woocommerce-checkout-review-order-table td {
   background-color: #36a4ef;
   border-right: 1px solid #FFF;
 }
-/* line 1017, ../scss/sass/base/_woocommerce.scss */
+/* line 1048, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page td {
   padding: 20px 70px;
 }
-/* line 1020, ../scss/sass/base/_woocommerce.scss */
+/* line 1051, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page h2, .thankyou-page .woocommerce-MyAccount-content h3, .woocommerce-MyAccount-content .thankyou-page h3 {
   font-weight: bold;
   color: #333;
   padding: 15px 0px;
   font-size: 18px;
 }
-/* line 1026, ../scss/sass/base/_woocommerce.scss */
+/* line 1057, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page h3 {
   font-weight: bold;
   color: #333;
   padding: 15px 0px;
   font-size: 15px;
 }
-/* line 1032, ../scss/sass/base/_woocommerce.scss */
+/* line 1063, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page .account_number {
   font-weight: bold;
 }
-/* line 1035, ../scss/sass/base/_woocommerce.scss */
+/* line 1066, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page .wc-bacs-bank-details {
   padding-bottom: 20px;
 }
-/* line 1039, ../scss/sass/base/_woocommerce.scss */
+/* line 1070, ../scss/sass/base/_woocommerce.scss */
 .thankyou-page .customer_details th {
   padding: 0px 70px;
 }
 
-/* line 1046, ../scss/sass/base/_woocommerce.scss */
+/* line 1077, ../scss/sass/base/_woocommerce.scss */
 .return-to-shop a {
   color: #36a4ef;
 }
 
-/* line 1051, ../scss/sass/base/_woocommerce.scss */
+/* line 1082, ../scss/sass/base/_woocommerce.scss */
 #place_order {
   display: block;
   width: 150px;
@@ -1620,12 +2210,12 @@ table.woocommerce-checkout-review-order-table td {
   color: #FFF;
   cursor: pointer;
 }
-/* line 1059, ../scss/sass/base/_woocommerce.scss */
+/* line 1090, ../scss/sass/base/_woocommerce.scss */
 #place_order:hover {
   background: #1e99ed;
 }
 
-/* line 1064, ../scss/sass/base/_woocommerce.scss */
+/* line 1095, ../scss/sass/base/_woocommerce.scss */
 .cart_counter {
-  color: #ff503e;
+  color: #ff6f4c;
 }

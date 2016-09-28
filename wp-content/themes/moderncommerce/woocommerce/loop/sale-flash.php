@@ -23,8 +23,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post, $product;
 
 ?>
-<?php if ( $product->is_on_sale() ) : ?>
 
-	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale">' . __( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
+<!-- Only Display onsale tag on the products which has no variable ( such as color, size ) -->
+<!-- Product with variables will read special price as zero ( Need to fix ) --> 
+<?php if ( $product->is_on_sale() && !$product->has_child()  ): ?>
+
+	<?php $percent = 100 - ceil(100 * ($product->sale_price / $product->regular_price )); ?>
+	<?php echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale"><span class="off-percent">'.$percent.'% OFF</span></span>', $post, $product ); ?>
+	<?php //echo apply_filters( 'woocommerce_sale_flash', '<span class="onsale"><span class="off-percent"></span>' . __( 'Sale!', 'woocommerce' ) . '</span>', $post, $product ); ?>
 
 <?php endif; ?>

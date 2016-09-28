@@ -14,6 +14,7 @@ $hover-link-color-base: darken($link-color-base,5%) !default;
 $background-color-base:#f4f4f4 !default;
 $border-color: #e9e9e9;
 $darker-border:darken($border_color, 5%);
+$onsale-color-base: #ff6f4c;
 
 
 //== Typography
@@ -24,3 +25,34 @@ $font-family-base: "microsoft yahei", Verdana, Arial !default;
 
 //== Elements
 $icon-size-base:23px !default;
+
+//== Grid system
+//
+//## Define custom responsive grid.
+// number of columns in the grid
+// Why did bootstrap team chose 12 instead of other choices?
+// need to know
+$grid-columns:	12 !default;
+// padding between columns.
+$grid-gutter-width:	30px !default;
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs-min:	480px !default;
+
+// Small screen / tablet
+$screen-sm-min: 768px !default;
+
+// Medium screen / desktop
+$screen-md-min: 992px !default;
+
+// Large screen / wide desktop
+$screen-lg-min: 1200px !default;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ( $screen-sm-min - 1) !default;
+$screen-sm-max: ( $screen-md-min - 1) !default;
+$screen-md-max: ( $screen-lg-min - 1) !default;

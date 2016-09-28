@@ -24,10 +24,12 @@ global $product;
 
 ?>
 <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-
+<!-- Only display special price for the products which has no variable ( such as color, size ) -->
+<!-- Product with variables will read special price as zero ( Need to fix ) -->
+<!-- Also, The product with variables, will not display different price when choosing different size or color ( need to fix ) -->
 	<!-- <p class="price"><?php //echo $product->get_price_html(); ?></p> -->
 	<?php //var_dump($product) ?>
-	<?php if(isset($product->regular_price) && isset($product->sale_price)) {?>
+	<?php if ( $product->is_on_sale() && !$product->has_child()) {?>
 		<div class="origin-price">
 			<label for="origin-price">原价</label>
 			<span id="origin-price">
