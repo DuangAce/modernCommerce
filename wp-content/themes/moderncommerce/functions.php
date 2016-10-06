@@ -1,26 +1,34 @@
 <?php
-require get_template_directory().'/inc/function-admin.php';
+//Theme Option Page
+// require get_template_directory().'/inc/function-admin.php';
+
 /**
-* Include All Css Files
+* Include all css and javascript files
 */ 
 function include_all_css()
 {
-    // Register the style like this for a theme:
+    // Register style and script here
     wp_register_style( 'theme-default', get_template_directory_uri() . '/css/theme-default.css', array(), '1.0.0', 'all' );
- 
+    wp_register_script('captcha',"https://www.google.com/recaptcha/api.js",array());
+    wp_register_script('check-password',get_template_directory_uri().'/js/checkingStrength.js',array(),'1.0.0','all');
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'theme-default' );
-    wp_register_script('captcha',"https://www.google.com/recaptcha/api.js",array());
+
+    //If the page is register or login page, otherwise dont load the google recaptcha javascript file
     $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
     if($current_url == 'http://localhost/wordpress/%E7%99%BB%E9%99%86/' || $current_url == 'http://localhost/wordpress/%E6%B3%A8%E5%86%8C/'){
         wp_enqueue_script('captcha');
     }
-    
+
+    //If the page is register page, load the javascript file for checking password strength
+    if($current_url == 'http://localhost/wordpress/%E6%B3%A8%E5%86%8C/'){
+      wp_enqueue_script('check-password');
+    }
 }
 add_action( 'wp_enqueue_scripts', 'include_all_css' );
 
 /**
-* Register Menus
+* Register Two Menus - header and vertical
 */
 function register_menus() {
   register_nav_menus(
